@@ -172,8 +172,8 @@ const CVWebsite = () => {
                   Frontend Development
                 </h3>
                 <ul className="space-y-2 text-gray-600 list-disc pl-4">
-                  <li>React with NextJS</li>
-                  <li>AngularJS, SvelteJS</li>
+                  <li>React, AngularJS, SvelteJS</li>
+                  <li>NextJS, Astro</li>
                   <li>Flutter</li>
                   <li>Tailwind CSS</li>
                 </ul>
@@ -197,7 +197,7 @@ const CVWebsite = () => {
                   <li>C/C++ (including CUDA)</li>
                   <li>Rust</li>
                   <li>C# and Java</li>
-                  <li>TypeScript</li>
+                  <li>Javascript, TypeScript & Python</li>
                 </ul>
               </div>
             </div>
