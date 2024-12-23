@@ -1,8 +1,10 @@
 ---
 import CVWebsite from "../components/CVWebsite";
+import DownloadPDFButton from "../components/DownloadPDFButton";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
+  <DownloadPDFButton client:only />
   <CVWebsite />
 </Layout>
