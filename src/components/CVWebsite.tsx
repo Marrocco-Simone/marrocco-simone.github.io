@@ -10,6 +10,7 @@ import {
   Linkedin,
   FileBadge,
   BookCheck,
+  FolderGit,
 } from "lucide-react";
 
 const CVWebsite = () => {
@@ -300,7 +301,8 @@ const CVWebsite = () => {
                     className="text-blue-600 hover:text-blue-800 flex items-center gap-2"
                   >
                     <Award size={16} className="text-blue-600" />
-                    BUCA'24 Workshop Participation Certificate
+                    "Challenges in building Billion User Cloud Applications"
+                    Workshop Participation Certificate
                   </a>
                 </li>
                 <li className="flex items-center gap-2">
