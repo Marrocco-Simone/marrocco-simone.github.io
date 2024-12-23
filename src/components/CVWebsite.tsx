@@ -9,6 +9,7 @@ import {
   Award,
   Linkedin,
   FileBadge,
+  BookCheck,
 } from "lucide-react";
 
 const CVWebsite = () => {
@@ -125,7 +126,14 @@ const CVWebsite = () => {
                   Master's in Computer Science
                 </h3>
                 <h4 className="text-blue-600 mb-2">University of Trento</h4>
-                <p className="text-gray-600">Currently pursuing</p>
+                <p className="text-gray-600 mb-4">Currently pursuing</p>
+                <a
+                  href="https://drive.google.com/file/d/16BduicjLgpSvjpTM7FD-Ybtio-rtKykW/view?usp=sharing"
+                  className="text-blue-600 hover:text-blue-800 flex items-center gap-2"
+                >
+                  <BookCheck size={16} />
+                  Grades
+                </a>
               </div>
 
               <div className="bg-white p-6 rounded-lg shadow-sm">
@@ -133,7 +141,14 @@ const CVWebsite = () => {
                 <h4 className="text-blue-600 mb-2">
                   Aalto University, Helsinki
                 </h4>
-                <p className="text-gray-600">Erasmus exchange period</p>
+                <p className="text-gray-600 mb-4">Erasmus exchange period</p>
+                <a
+                  href="https://drive.google.com/file/d/1NX-fTekIQCbeTxfpHmWBgF0MdcK7BQYz/view?usp=sharing"
+                  className="text-blue-600 hover:text-blue-800 flex items-center gap-2"
+                >
+                  <BookCheck size={16} />
+                  Grades
+                </a>
               </div>
 
               <div className="bg-white p-6 rounded-lg shadow-sm">
@@ -141,9 +156,16 @@ const CVWebsite = () => {
                   Bachelor's in Computer Science
                 </h3>
                 <h4 className="text-blue-600 mb-2">University of Trento</h4>
-                <p className="text-gray-600">
+                <p className="text-gray-600 mb-4">
                   Graduated with full marks cum laude
                 </p>
+                <a
+                  href="https://drive.google.com/file/d/1dqj_6ackcfFEAO8rvdC84327qS6juLOI/view?usp=sharing"
+                  className="text-blue-600 hover:text-blue-800 flex items-center gap-2"
+                >
+                  <BookCheck size={16} />
+                  Grades
+                </a>
               </div>
             </div>
           </section>
