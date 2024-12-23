@@ -7,20 +7,22 @@ import {
   Briefcase,
   GraduationCap,
   Award,
+  Linkedin,
+  FileBadge,
 } from "lucide-react";
 
 const CVWebsite = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Header/Hero Section */}
-      <header className="bg-blue-600 text-white py-16">
+      <header className="bg-blue-600 text-white pt-16 pb-8">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h1 className="text-4xl font-bold mb-4">Marrocco Simone</h1>
             <h2 className="text-2xl mb-6">
               Full Stack MERN Developer & Software Architecture Engineer
             </h2>
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-col gap-4">
               <a
                 href="mailto:marrocco.simone00@gmail.com"
                 className="flex items-center gap-2 hover:text-blue-200"
@@ -34,6 +36,13 @@ const CVWebsite = () => {
               >
                 <Github size={20} />
                 GitHub Profile
+              </a>
+              <a
+                href="https://www.linkedin.com/in/simone-marrocco"
+                className="flex items-center gap-2 hover:text-blue-200"
+              >
+                <Linkedin size={20} />
+                LinkedIn Profile
               </a>
             </div>
           </div>
@@ -57,10 +66,11 @@ const CVWebsite = () => {
                 <p className="text-gray-600 mb-4">
                   Developed a comprehensive web application for managing martial
                   arts competitions using the MERN stack (MongoDB, Express,
-                  React, NextJS). All APIs are fully documented and accessible.
+                  React, NextJS). Helped different organizations to manage over
+                  4000 complessive athletes.
                 </p>
                 <a
-                  href="http://judoincloud.com"
+                  href="https://judoincloud.com"
                   className="text-blue-600 hover:text-blue-800 flex items-center gap-2"
                 >
                   <Globe size={16} />
@@ -75,10 +85,17 @@ const CVWebsite = () => {
                 <h4 className="text-blue-600 mb-2">
                   CiaoManager - Hotel in Cloud
                 </h4>
-                <p className="text-gray-600">
+                <p className="text-gray-600 mb-4">
                   Six-month internship developing a web application for hotel
-                  and B&B management using Express and React.
+                  and B&B management using Express, MySQL and React.
                 </p>
+                <a
+                  href="https://www.hotelincloud.com/"
+                  className="text-blue-600 hover:text-blue-800 flex items-center gap-2"
+                >
+                  <Globe size={16} />
+                  Visit Website
+                </a>
               </div>
 
               <div className="bg-white p-6 rounded-lg shadow-sm">
@@ -90,7 +107,7 @@ const CVWebsite = () => {
                 </h4>
                 <p className="text-gray-600">
                   Contributed to SmartGame, an E-Learning application
-                  development project.
+                  development project. Web app made in NextJs.
                 </p>
               </div>
             </div>
@@ -186,6 +203,56 @@ const CVWebsite = () => {
             </div>
           </section>
 
+          {/* Documents Section */}
+          <section>
+            <div className="flex items-center gap-2 mb-6">
+              <FileBadge className="text-blue-600" size={24} />
+              <h2 className="text-2xl font-bold">Documents & Publications</h2>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-sm">
+              <ul className="space-y-4 text-gray-600">
+                <li className="flex items-center gap-2">
+                  <a
+                    href="https://drive.google.com/file/d/1GL6xkV0TNDhgiAwDzCbjxsiwcGI-l9Y-/view?usp=sharing"
+                    className="text-blue-600 hover:text-blue-800 flex items-center gap-2"
+                  >
+                    <FileBadge size={16} className="text-blue-600" />
+                    Predicting Economics Figures with Statistical Models
+                  </a>
+                </li>
+                <li className="flex items-center gap-2">
+                  <a
+                    href="https://drive.google.com/file/d/17jI1zyXzyaUpWyu4WjfayTT9-xjXnp0U/view?usp=sharing"
+                    className="text-blue-600 hover:text-blue-800 flex items-center gap-2"
+                  >
+                    <FileBadge size={16} className="text-blue-600" />
+                    Distributed Database in Akka.NET
+                  </a>
+                </li>
+                <li className="flex items-center gap-2">
+                  <a
+                    href="https://drive.google.com/file/d/1fuAznWDFWW-ZVmwYUZ_RjczZf-YGEGbB/view?usp=sharing"
+                    className="text-blue-600 hover:text-blue-800 flex items-center gap-2"
+                  >
+                    <FileBadge size={16} className="text-blue-600" />
+                    Server Side Public License - Cloud providers and the future
+                    of open source
+                  </a>
+                </li>
+
+                <li className="flex items-center gap-2">
+                  <a
+                    href="https://drive.google.com/file/d/19hU47HTiTprVjn8w--J3gGsfS0NYtGSM/view"
+                    className="text-blue-600 hover:text-blue-800 flex items-center gap-2"
+                  >
+                    <FileBadge size={16} className="text-blue-600" />
+                    Bachelor's dissertation - Load Balancing for Web Apps
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </section>
+
           {/* Certifications Section */}
           <section>
             <div className="flex items-center gap-2 mb-6">
@@ -197,16 +264,31 @@ const CVWebsite = () => {
             <div className="bg-white p-6 rounded-lg shadow-sm">
               <ul className="space-y-4 text-gray-600">
                 <li className="flex items-center gap-2">
-                  <Award size={16} className="text-blue-600" />
-                  English C1 Cambridge CAE Certification
+                  <a
+                    href="https://drive.google.com/file/d/1r-3B8__UoC5Ko2ETJhd0xASZi8NVOFU0/view?usp=sharing"
+                    className="text-blue-600 hover:text-blue-800 flex items-center gap-2"
+                  >
+                    <Award size={16} className="text-blue-600" />
+                    English C1 Cambridge CAE Certification
+                  </a>
                 </li>
                 <li className="flex items-center gap-2">
-                  <Award size={16} className="text-blue-600" />
-                  BUCA'24 Workshop Participation Certificate
+                  <a
+                    href="https://drive.google.com/file/d/1-ofFOrPGhfmaUELdiykzbsKB38A0vOn0/view?usp=drive_link"
+                    className="text-blue-600 hover:text-blue-800 flex items-center gap-2"
+                  >
+                    <Award size={16} className="text-blue-600" />
+                    BUCA'24 Workshop Participation Certificate
+                  </a>
                 </li>
                 <li className="flex items-center gap-2">
-                  <Award size={16} className="text-blue-600" />
-                  Industrial AI Challenge Certification
+                  <a
+                    href="https://drive.google.com/file/d/14H4_GW9OJcJfeWf-dz9biwY9VMt4y-BE/view?usp=sharing"
+                    className="text-blue-600 hover:text-blue-800 flex items-center gap-2"
+                  >
+                    <Award size={16} className="text-blue-600" />
+                    Industrial AI Challenge Certification
+                  </a>
                 </li>
               </ul>
             </div>
@@ -217,8 +299,7 @@ const CVWebsite = () => {
       {/* Footer */}
       <footer className="bg-gray-800 text-white py-8 mt-12">
         <div className="container mx-auto px-4 text-center">
-          <p>© 2024 Marrocco Simone. All rights reserved.</p>
-          <p className="mt-2 text-gray-400">Born in Trento, 23/10/2000</p>
+          <p>© 2024 Marrocco Simone.</p>
         </div>
       </footer>
     </div>
