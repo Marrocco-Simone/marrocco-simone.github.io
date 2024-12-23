@@ -290,6 +290,15 @@ const CVWebsite = () => {
                     Industrial AI Challenge Certification
                   </a>
                 </li>
+                <li className="flex items-center gap-2">
+                  <a
+                    href="https://drive.google.com/file/d/1UXNVs3jX8LPwYwCvTreQ6B0ggN5h3Zl6/view?usp=sharing"
+                    className="text-blue-600 hover:text-blue-800 flex items-center gap-2"
+                  >
+                    <Award size={16} className="text-blue-600" />
+                    National Judo Referee Certification
+                  </a>
+                </li>
               </ul>
             </div>
           </section>
