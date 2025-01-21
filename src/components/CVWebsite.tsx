@@ -28,6 +28,8 @@ const CVWebsite = () => {
               <a
                 href="mailto:marrocco.simone00@gmail.com"
                 className="flex items-center gap-2 hover:text-blue-200"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <Mail size={20} />
                 marrocco.simone00@gmail.com
@@ -35,6 +37,8 @@ const CVWebsite = () => {
               <a
                 href="http://github.com/Marrocco-Simone"
                 className="flex items-center gap-2 hover:text-blue-200"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <Github size={20} />
                 GitHub Profile
@@ -42,6 +46,8 @@ const CVWebsite = () => {
               <a
                 href="https://www.linkedin.com/in/simone-marrocco"
                 className="flex items-center gap-2 hover:text-blue-200"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <Linkedin size={20} />
                 LinkedIn Profile
@@ -74,6 +80,8 @@ const CVWebsite = () => {
                 <a
                   href="https://judoincloud.com"
                   className="text-blue-600 hover:text-blue-800 flex items-center gap-2"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <Globe size={16} />
                   Visit Project
@@ -92,6 +100,8 @@ const CVWebsite = () => {
                 <a
                   href="https://www.hotelincloud.com/"
                   className="text-blue-600 hover:text-blue-800 flex items-center gap-2"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <Globe size={16} />
                   Visit Website
@@ -112,6 +122,8 @@ const CVWebsite = () => {
                 <a
                   href="https://github.com/SmarterGame/new-sensation"
                   className="text-blue-600 hover:text-blue-800 flex items-center gap-2"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <Globe size={16} />
                   Visit Repo
@@ -136,6 +148,8 @@ const CVWebsite = () => {
                 <a
                   href="https://drive.google.com/file/d/16BduicjLgpSvjpTM7FD-Ybtio-rtKykW/view?usp=sharing"
                   className="text-blue-600 hover:text-blue-800 flex items-center gap-2"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <BookCheck size={16} />
                   Grades
@@ -151,6 +165,8 @@ const CVWebsite = () => {
                 <a
                   href="https://drive.google.com/file/d/1NX-fTekIQCbeTxfpHmWBgF0MdcK7BQYz/view?usp=sharing"
                   className="text-blue-600 hover:text-blue-800 flex items-center gap-2"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <BookCheck size={16} />
                   Grades
@@ -168,6 +184,8 @@ const CVWebsite = () => {
                 <a
                   href="https://drive.google.com/file/d/1dqj_6ackcfFEAO8rvdC84327qS6juLOI/view?usp=sharing"
                   className="text-blue-600 hover:text-blue-800 flex items-center gap-2"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <BookCheck size={16} />
                   Grades
@@ -243,6 +261,8 @@ const CVWebsite = () => {
                   <a
                     href="https://drive.google.com/file/d/1GL6xkV0TNDhgiAwDzCbjxsiwcGI-l9Y-/view?usp=sharing"
                     className="text-blue-600 hover:text-blue-800 flex items-center gap-2"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <FileBadge size={16} className="text-blue-600" />
                     Predicting Economics Figures with Statistical Models
@@ -252,6 +272,8 @@ const CVWebsite = () => {
                   <a
                     href="https://drive.google.com/file/d/17jI1zyXzyaUpWyu4WjfayTT9-xjXnp0U/view?usp=sharing"
                     className="text-blue-600 hover:text-blue-800 flex items-center gap-2"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <FileBadge size={16} className="text-blue-600" />
                     Distributed Database in Akka.NET
@@ -261,6 +283,8 @@ const CVWebsite = () => {
                   <a
                     href="https://drive.google.com/file/d/1fuAznWDFWW-ZVmwYUZ_RjczZf-YGEGbB/view?usp=sharing"
                     className="text-blue-600 hover:text-blue-800 flex items-center gap-2"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <FileBadge size={16} className="text-blue-600" />
                     Server Side Public License - Cloud providers and the future
@@ -272,6 +296,8 @@ const CVWebsite = () => {
                   <a
                     href="https://drive.google.com/file/d/19hU47HTiTprVjn8w--J3gGsfS0NYtGSM/view"
                     className="text-blue-600 hover:text-blue-800 flex items-center gap-2"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <FileBadge size={16} className="text-blue-600" />
                     Bachelor's dissertation - Load Balancing for Web Apps
@@ -295,6 +321,8 @@ const CVWebsite = () => {
                   <a
                     href="https://drive.google.com/file/d/1r-3B8__UoC5Ko2ETJhd0xASZi8NVOFU0/view?usp=sharing"
                     className="text-blue-600 hover:text-blue-800 flex items-center gap-2"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <Award size={16} className="text-blue-600" />
                     English C1 Cambridge CAE Certification
@@ -304,6 +332,8 @@ const CVWebsite = () => {
                   <a
                     href="https://drive.google.com/file/d/1-ofFOrPGhfmaUELdiykzbsKB38A0vOn0/view?usp=drive_link"
                     className="text-blue-600 hover:text-blue-800 flex items-center gap-2"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <Award size={16} className="text-blue-600" />
                     "Challenges in building Billion User Cloud Applications"
@@ -314,6 +344,8 @@ const CVWebsite = () => {
                   <a
                     href="https://drive.google.com/file/d/14H4_GW9OJcJfeWf-dz9biwY9VMt4y-BE/view?usp=sharing"
                     className="text-blue-600 hover:text-blue-800 flex items-center gap-2"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <Award size={16} className="text-blue-600" />
                     Industrial AI Challenge Certification
@@ -323,6 +355,8 @@ const CVWebsite = () => {
                   <a
                     href="https://drive.google.com/file/d/1UXNVs3jX8LPwYwCvTreQ6B0ggN5h3Zl6/view?usp=sharing"
                     className="text-blue-600 hover:text-blue-800 flex items-center gap-2"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <Award size={16} className="text-blue-600" />
                     National Judo Referee Certification
