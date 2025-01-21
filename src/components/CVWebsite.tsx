@@ -152,7 +152,7 @@ const CVWebsite = () => {
                 <h3 className="text-xl font-semibold mb-2">
                   Master's in Computer Science
                 </h3>
-                <h4 className="text-blue-600 mb-2">University of Trento</h4>
+                <h4 className="italic mb-2">University of Trento</h4>
                 <p className="text-gray-600 mb-4">Currently pursuing</p>
                 <a
                   href="https://drive.google.com/file/d/16BduicjLgpSvjpTM7FD-Ybtio-rtKykW/view?usp=sharing"
@@ -167,9 +167,7 @@ const CVWebsite = () => {
 
               <div className="bg-white p-6 rounded-lg shadow-sm">
                 <h3 className="text-xl font-semibold mb-2">Exchange Program</h3>
-                <h4 className="text-blue-600 mb-2">
-                  Aalto University, Helsinki
-                </h4>
+                <h4 className="italic mb-2">Aalto University, Helsinki</h4>
                 <p className="text-gray-600 mb-4">Erasmus exchange period</p>
                 <a
                   href="https://drive.google.com/file/d/1NX-fTekIQCbeTxfpHmWBgF0MdcK7BQYz/view?usp=sharing"
@@ -186,7 +184,7 @@ const CVWebsite = () => {
                 <h3 className="text-xl font-semibold mb-2">
                   Bachelor's in Computer Science
                 </h3>
-                <h4 className="text-blue-600 mb-2">University of Trento</h4>
+                <h4 className="italic mb-2">University of Trento</h4>
                 <p className="text-gray-600 mb-4">
                   Graduated with full marks cum laude
                 </p>
