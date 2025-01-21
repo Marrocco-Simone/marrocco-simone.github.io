@@ -52,6 +52,15 @@ const CVWebsite = () => {
                 <Linkedin size={20} />
                 LinkedIn Profile
               </a>
+              <a
+                href="https://marrocco-simone.github.io/"
+                className="flex items-center gap-2 hover:text-blue-200"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Globe size={20} />
+                Personal website
+              </a>
             </div>
           </div>
         </div>
