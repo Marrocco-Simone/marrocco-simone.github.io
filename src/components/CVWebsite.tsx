@@ -64,7 +64,7 @@ const CVWebsite = () => {
                 <h3 className="text-xl font-semibold mb-2">
                   Founder & MERN Developer
                 </h3>
-                <h4 className="text-blue-600 mb-2">Judo in Cloud</h4>
+                <h4 className="italic mb-2">Judo in Cloud</h4>
                 <p className="text-gray-600 mb-4">
                   Developed a comprehensive web application for managing martial
                   arts competitions using the MERN stack (MongoDB, Express,
@@ -84,9 +84,7 @@ const CVWebsite = () => {
                 <h3 className="text-xl font-semibold mb-2">
                   Full Stack Developer
                 </h3>
-                <h4 className="text-blue-600 mb-2">
-                  CiaoManager - Hotel in Cloud
-                </h4>
+                <h4 className="italic mb-2">CiaoManager - Hotel in Cloud</h4>
                 <p className="text-gray-600 mb-4">
                   Six-month internship developing a web application for hotel
                   and B&B management using Express, MySQL and React.
@@ -104,13 +102,20 @@ const CVWebsite = () => {
                 <h3 className="text-xl font-semibold mb-2">
                   Research Collaboration
                 </h3>
-                <h4 className="text-blue-600 mb-2">
+                <h4 className="italic mb-2">
                   FBK (Bruno Kesler Research Foundation)
                 </h4>
-                <p className="text-gray-600">
+                <p className="text-gray-600 mb-4">
                   Contributed to SmartGame, an E-Learning application
                   development project. Web app made in NextJs.
                 </p>
+                <a
+                  href="https://github.com/SmarterGame/new-sensation"
+                  className="text-blue-600 hover:text-blue-800 flex items-center gap-2"
+                >
+                  <Globe size={16} />
+                  Visit Repo
+                </a>
               </div>
             </div>
           </section>
