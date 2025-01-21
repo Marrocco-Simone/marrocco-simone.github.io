@@ -66,8 +66,8 @@ const CVWebsite = () => {
         </div>
       </header>
 
-      <main className="container mx-auto px-4 py-8 xpy-12">
-        <div className="max-w-4xl mx-auto xspace-y-12">
+      <main className="container mx-auto px-4 py-12">
+        <div className="max-w-4xl mx-auto space-y-12">
           {/* Work Experience Section */}
           <section>
             <div className="flex items-center gap-2 mb-6">
@@ -142,7 +142,7 @@ const CVWebsite = () => {
           </section>
 
           {/* Education Section */}
-          <section className="mt-80">
+          <section>
             <div className="flex items-center gap-2 mb-6">
               <GraduationCap className="text-blue-600" size={24} />
               <h2 className="text-2xl font-bold">Education</h2>
@@ -202,7 +202,7 @@ const CVWebsite = () => {
           </section>
 
           {/* Technical Skills Section */}
-          <section className="mt-10">
+          <section>
             <div className="flex items-center gap-2 mb-6">
               <Code className="text-blue-600" size={24} />
               <h2 className="text-2xl font-bold">Technical Skills</h2>
@@ -257,7 +257,7 @@ const CVWebsite = () => {
           </section>
 
           {/* Soft Skills Section */}
-          <section className="mt-80">
+          <section>
             <div className="flex items-center gap-2 mb-6">
               <Sparkles className="text-blue-600" size={24} />
               <h2 className="text-2xl font-bold">Soft Skills</h2>
@@ -346,7 +346,7 @@ const CVWebsite = () => {
           </section>
 
           {/* Documents Section */}
-          <section className="mt-10">
+          <section>
             <div className="flex items-center gap-2 mb-6">
               <FileBadge className="text-blue-600" size={24} />
               <h2 className="text-2xl font-bold">Documents & Publications</h2>
@@ -404,7 +404,7 @@ const CVWebsite = () => {
           </section>
 
           {/* Certifications Section */}
-          <section className="mt-80">
+          <section>
             <div className="flex items-center gap-2 mb-6">
               <Award className="text-blue-600" size={24} />
               <h2 className="text-2xl font-bold">
