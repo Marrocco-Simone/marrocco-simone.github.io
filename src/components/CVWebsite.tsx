@@ -10,7 +10,7 @@ import {
   Linkedin,
   FileBadge,
   BookCheck,
-  FolderGit,
+  Sparkles,
 } from "lucide-react";
 
 const CVWebsite = () => {
@@ -251,6 +251,95 @@ const CVWebsite = () => {
                   <li>Rust</li>
                   <li>C# and Java</li>
                   <li>Javascript, TypeScript & Python</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          {/* Soft Skills Section */}
+          <section>
+            <div className="flex items-center gap-2 mb-6">
+              <Sparkles className="text-blue-600" size={24} />
+              <h2 className="text-2xl font-bold">Soft Skills</h2>
+            </div>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="bg-white p-6 rounded-lg shadow-sm">
+                <h3 className="text-xl font-semibold mb-4">
+                  Leadership & Management
+                </h3>
+                <ul className="space-y-2 text-gray-600 list-disc pl-4">
+                  <li>
+                    Project Leadership - Led development of Judo in Cloud
+                    managing 4000+ athletes
+                  </li>
+                  <li>
+                    Strategic Planning - Developed and executed business
+                    strategy for cloud-based solutions
+                  </li>
+                  <li>
+                    Team Coordination - Experience in goal setting and team
+                    direction
+                  </li>
+                </ul>
+              </div>
+
+              <div className="bg-white p-6 rounded-lg shadow-sm">
+                <h3 className="text-xl font-semibold mb-4">
+                  Business & Analysis
+                </h3>
+                <ul className="space-y-2 text-gray-600 list-disc pl-4">
+                  <li>
+                    Business Development - Successfully launched and grew Judo
+                    in Cloud platform
+                  </li>
+                  <li>
+                    Strategic Analysis - Conducted cost and load analysis for
+                    scalable applications
+                  </li>
+                  <li>
+                    Market Research - Researched and published analysis on cloud
+                    providers and open source
+                  </li>
+                </ul>
+              </div>
+
+              <div className="bg-white p-6 rounded-lg shadow-sm">
+                <h3 className="text-xl font-semibold mb-4">
+                  Communication & Interpersonal
+                </h3>
+                <ul className="space-y-2 text-gray-600 list-disc pl-4">
+                  <li>
+                    Stakeholder Management - Coordinated with competition
+                    organizers for the best possible outcome
+                  </li>
+                  <li>
+                    Cross-cultural Communication - International experience
+                    through Erasmus in Helsinki
+                  </li>
+                  <li>
+                    Technical Communication - Published research papers and
+                    technical documentation
+                  </li>
+                </ul>
+              </div>
+
+              <div className="bg-white p-6 rounded-lg shadow-sm">
+                <h3 className="text-xl font-semibold mb-4">
+                  Problem-Solving & Innovation
+                </h3>
+                <ul className="space-y-2 text-gray-600 list-disc pl-4">
+                  <li>
+                    User-Centered Design - Developed intuitive solutions for
+                    complex tournament management
+                  </li>
+                  <li>
+                    Adaptability - Experience across multiple programming
+                    languages and frameworks
+                  </li>
+                  <li>
+                    Innovation Mindset - Created novel solutions for existing
+                    problems
+                  </li>
                 </ul>
               </div>
             </div>
