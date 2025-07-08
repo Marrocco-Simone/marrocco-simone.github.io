@@ -8,6 +8,11 @@ export const education: Education[] = [
       "Working with professors Segata Michele and Casari Paolo on telecommunication security and privacy for cooperative autonomous vehicles.",
     links: [
       {
+        text: "Research group",
+        href: "https://manta.disi.unitn.it/",
+        icon: "microscope",
+      },
+      {
         text: "University profile",
         href: "https://webapps.unitn.it/du/it/Persona/PER0197435/Pubblicazioni",
         icon: "microscope",
