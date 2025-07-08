@@ -240,7 +240,7 @@ const CVWebsite = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <FileBadge size={16} className="text-blue-600" />
+                    <FileBadge size={16} className="text-blue-600 w-16" />
                     Master's dissertation - MIMO physical layer security using
                     multiple Reconfigurable Intelligent Surfaces
                   </a>
@@ -252,7 +252,7 @@ const CVWebsite = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <FileBadge size={16} className="text-blue-600" />
+                    <FileBadge size={16} className="text-blue-600 w-16" />
                     Poster: Multi-Receiver Physical Layer Security Using
                     Reconfigurable Intelligent Surfaces
                   </a>
@@ -264,7 +264,7 @@ const CVWebsite = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <FileBadge size={16} className="text-blue-600" />
+                    <FileBadge size={16} className="text-blue-600 w-16" />
                     Predicting Economics Figures with Statistical Models
                   </a>
                 </li>
@@ -275,7 +275,7 @@ const CVWebsite = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <FileBadge size={16} className="text-blue-600" />
+                    <FileBadge size={16} className="text-blue-600 w-16" />
                     Bachelor's dissertation - Load Balancing for Web Apps
                   </a>
                 </li>
@@ -286,7 +286,7 @@ const CVWebsite = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <FileBadge size={16} className="text-blue-600" />
+                    <FileBadge size={16} className="text-blue-600 w-16" />
                     Distributed Database in Akka.NET
                   </a>
                 </li>
@@ -297,7 +297,7 @@ const CVWebsite = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <FileBadge size={16} className="text-blue-600" />
+                    <FileBadge size={16} className="text-blue-600 w-16" />
                     Server Side Public License - Cloud providers and the future
                     of open source
                   </a>
@@ -467,7 +467,7 @@ const CVWebsite = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <Award size={16} className="text-blue-600" />
+                    <Award size={16} className="text-blue-600 w-16" />
                     English C1 Cambridge CAE Certification
                   </a>
                 </li>
@@ -478,7 +478,7 @@ const CVWebsite = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <Award size={16} className="text-blue-600" />
+                    <Award size={16} className="text-blue-600 w-16" />
                     "Challenges in building Billion User Cloud Applications"
                     Workshop Participation Certificate
                   </a>
@@ -490,7 +490,7 @@ const CVWebsite = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <Award size={16} className="text-blue-600" />
+                    <Award size={16} className="text-blue-600 w-16" />
                     Industrial AI Challenge Certification
                   </a>
                 </li>
@@ -501,7 +501,7 @@ const CVWebsite = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <Award size={16} className="text-blue-600" />
+                    <Award size={16} className="text-blue-600 w-16" />
                     National Judo Referee Certification
                   </a>
                 </li>
