@@ -100,6 +100,38 @@ const CVWebsite = () => {
 
               <div className="bg-white p-6 rounded-lg shadow-sm">
                 <h3 className="text-xl font-semibold mb-2">
+                  Consultant & MERN Developer
+                </h3>
+                <h4 className="italic mb-2">Compify</h4>
+                <p className="text-gray-600 mb-4">
+                  Developed a comprehensive web application for managing
+                  sommelier competitions using the MERN stack (MongoDB, Express,
+                  React, NextJS). Helped organizing the Milano Sake Challenge,
+                  one of the biggest sake competitions in Europe with over 1000
+                  bottles from all over Japan and the world.
+                </p>
+                <a
+                  href="https://compify.io"
+                  className="text-blue-600 hover:text-blue-800 flex items-center gap-2"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Globe size={16} />
+                  Visit Project
+                </a>
+                <a
+                  href="https://milanosakechallenge.com"
+                  className="text-blue-600 hover:text-blue-800 flex items-center gap-2"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Globe size={16} />
+                  Visit the event page
+                </a>
+              </div>
+
+              <div className="bg-white p-6 rounded-lg shadow-sm">
+                <h3 className="text-xl font-semibold mb-2">
                   Full Stack Developer
                 </h3>
                 <h4 className="italic mb-2">CiaoManager - Hotel in Cloud</h4>
