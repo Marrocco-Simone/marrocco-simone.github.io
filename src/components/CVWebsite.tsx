@@ -225,6 +225,87 @@ const CVWebsite = () => {
             </div>
           </section>
 
+          {/* Documents Section */}
+          <section>
+            <div className="flex items-center gap-2 mb-6">
+              <FileBadge className="text-blue-600" size={24} />
+              <h2 className="text-2xl font-bold">Documents & Publications</h2>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-sm">
+              <ul className="space-y-4 text-gray-600">
+                <li className="flex items-center gap-2">
+                  <a
+                    href="https://drive.google.com/file/d/1jS7MeY0iZA33X0UffKoNxZBHcLGOSCYx/view?usp=sharing"
+                    className="text-blue-600 hover:text-blue-800 flex items-center gap-2"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FileBadge size={16} className="text-blue-600" />
+                    Master's dissertation - MIMO physical layer security using
+                    multiple Reconfigurable Intelligent Surfaces
+                  </a>
+                </li>
+                <li className="flex items-center gap-2">
+                  <a
+                    href="https://ieeexplore.ieee.org/document/11054099"
+                    className="text-blue-600 hover:text-blue-800 flex items-center gap-2"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FileBadge size={16} className="text-blue-600" />
+                    Poster: Multi-Receiver Physical Layer Security Using
+                    Reconfigurable Intelligent Surfaces
+                  </a>
+                </li>
+                <li className="flex items-center gap-2">
+                  <a
+                    href="https://drive.google.com/file/d/1GL6xkV0TNDhgiAwDzCbjxsiwcGI-l9Y-/view?usp=sharing"
+                    className="text-blue-600 hover:text-blue-800 flex items-center gap-2"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FileBadge size={16} className="text-blue-600" />
+                    Predicting Economics Figures with Statistical Models
+                  </a>
+                </li>
+                <li className="flex items-center gap-2">
+                  <a
+                    href="https://drive.google.com/file/d/19hU47HTiTprVjn8w--J3gGsfS0NYtGSM/view"
+                    className="text-blue-600 hover:text-blue-800 flex items-center gap-2"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FileBadge size={16} className="text-blue-600" />
+                    Bachelor's dissertation - Load Balancing for Web Apps
+                  </a>
+                </li>
+                <li className="flex items-center gap-2">
+                  <a
+                    href="https://drive.google.com/file/d/17jI1zyXzyaUpWyu4WjfayTT9-xjXnp0U/view?usp=sharing"
+                    className="text-blue-600 hover:text-blue-800 flex items-center gap-2"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FileBadge size={16} className="text-blue-600" />
+                    Distributed Database in Akka.NET
+                  </a>
+                </li>
+                <li className="flex items-center gap-2">
+                  <a
+                    href="https://drive.google.com/file/d/1fuAznWDFWW-ZVmwYUZ_RjczZf-YGEGbB/view?usp=sharing"
+                    className="text-blue-600 hover:text-blue-800 flex items-center gap-2"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FileBadge size={16} className="text-blue-600" />
+                    Server Side Public License - Cloud providers and the future
+                    of open source
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </section>
+
           {/* Technical Skills Section */}
           <section>
             <div className="flex items-center gap-2 mb-6">
@@ -366,87 +447,6 @@ const CVWebsite = () => {
                   </li>
                 </ul>
               </div>
-            </div>
-          </section>
-
-          {/* Documents Section */}
-          <section>
-            <div className="flex items-center gap-2 mb-6">
-              <FileBadge className="text-blue-600" size={24} />
-              <h2 className="text-2xl font-bold">Documents & Publications</h2>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow-sm">
-              <ul className="space-y-4 text-gray-600">
-                <li className="flex items-center gap-2">
-                  <a
-                    href="https://drive.google.com/file/d/1jS7MeY0iZA33X0UffKoNxZBHcLGOSCYx/view?usp=sharing"
-                    className="text-blue-600 hover:text-blue-800 flex items-center gap-2"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <FileBadge size={16} className="text-blue-600" />
-                    Master's dissertation - MIMO physical layer security using
-                    multiple Reconfigurable Intelligent Surfaces
-                  </a>
-                </li>
-                <li className="flex items-center gap-2">
-                  <a
-                    href="https://ieeexplore.ieee.org/document/11054099"
-                    className="text-blue-600 hover:text-blue-800 flex items-center gap-2"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <FileBadge size={16} className="text-blue-600" />
-                    Poster: Multi-Receiver Physical Layer Security Using
-                    Reconfigurable Intelligent Surfaces
-                  </a>
-                </li>
-                <li className="flex items-center gap-2">
-                  <a
-                    href="https://drive.google.com/file/d/1GL6xkV0TNDhgiAwDzCbjxsiwcGI-l9Y-/view?usp=sharing"
-                    className="text-blue-600 hover:text-blue-800 flex items-center gap-2"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <FileBadge size={16} className="text-blue-600" />
-                    Predicting Economics Figures with Statistical Models
-                  </a>
-                </li>
-                <li className="flex items-center gap-2">
-                  <a
-                    href="https://drive.google.com/file/d/19hU47HTiTprVjn8w--J3gGsfS0NYtGSM/view"
-                    className="text-blue-600 hover:text-blue-800 flex items-center gap-2"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <FileBadge size={16} className="text-blue-600" />
-                    Bachelor's dissertation - Load Balancing for Web Apps
-                  </a>
-                </li>
-                <li className="flex items-center gap-2">
-                  <a
-                    href="https://drive.google.com/file/d/17jI1zyXzyaUpWyu4WjfayTT9-xjXnp0U/view?usp=sharing"
-                    className="text-blue-600 hover:text-blue-800 flex items-center gap-2"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <FileBadge size={16} className="text-blue-600" />
-                    Distributed Database in Akka.NET
-                  </a>
-                </li>
-                <li className="flex items-center gap-2">
-                  <a
-                    href="https://drive.google.com/file/d/1fuAznWDFWW-ZVmwYUZ_RjczZf-YGEGbB/view?usp=sharing"
-                    className="text-blue-600 hover:text-blue-800 flex items-center gap-2"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <FileBadge size={16} className="text-blue-600" />
-                    Server Side Public License - Cloud providers and the future
-                    of open source
-                  </a>
-                </li>
-              </ul>
             </div>
           </section>
 
