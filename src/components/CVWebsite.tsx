@@ -36,6 +36,24 @@ const CVWebsite = () => {
                 marrocco.simone00@gmail.com
               </a>
               <a
+                href="mailto:simone.marrocco@unitn.it"
+                className="flex items-center gap-2 hover:text-blue-200"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Mail size={20} />
+                simone.marrocco@unitn.it
+              </a>
+              <a
+                href="mailto:info@judoincloud.com"
+                className="flex items-center gap-2 hover:text-blue-200"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Mail size={20} />
+                info@judoincloud.com
+              </a>
+              <a
                 href="http://github.com/Marrocco-Simone"
                 className="flex items-center gap-2 hover:text-blue-200"
                 target="_blank"
