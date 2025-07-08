@@ -24,8 +24,8 @@ const DocumentLinks: React.FC<DocumentLinksProps> = ({
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Icon size={16} className="text-blue-600 w-16" />
-              {document.text}
+              <Icon size={16} className="text-blue-600 w-10" />
+              <p className="p-0 m-0 w-full">{document.text}</p>
             </a>
           </li>
         ))}
