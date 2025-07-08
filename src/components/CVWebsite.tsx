@@ -11,6 +11,7 @@ import {
   FileBadge,
   BookCheck,
   Sparkles,
+  Microscope,
 } from "lucide-react";
 
 const CVWebsite = () => {
@@ -150,10 +151,33 @@ const CVWebsite = () => {
             <div className="space-y-6">
               <div className="bg-white p-6 rounded-lg shadow-sm">
                 <h3 className="text-xl font-semibold mb-2">
+                  Researcher in Telecommunication Security
+                </h3>
+                <h4 className="italic mb-2">University of Trento</h4>
+                <p className="text-gray-600 mb-4">
+                  Working with professors Segata Michele and Casari Paolo on
+                  telecommunication security and privacy for cooperative
+                  autonomous vehicles.
+                </p>
+                <a
+                  href="https://webapps.unitn.it/du/it/Persona/PER0197435/Pubblicazioni"
+                  className="text-blue-600 hover:text-blue-800 flex items-center gap-2"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Microscope size={16} />
+                  University profile
+                </a>
+              </div>
+
+              <div className="bg-white p-6 rounded-lg shadow-sm">
+                <h3 className="text-xl font-semibold mb-2">
                   Master's in Computer Science
                 </h3>
                 <h4 className="italic mb-2">University of Trento</h4>
-                <p className="text-gray-600 mb-4">Currently pursuing</p>
+                <p className="text-gray-600 mb-4">
+                  Graduated with full marks cum laude
+                </p>
                 <a
                   href="https://drive.google.com/file/d/16BduicjLgpSvjpTM7FD-Ybtio-rtKykW/view?usp=sharing"
                   className="text-blue-600 hover:text-blue-800 flex items-center gap-2"
@@ -161,7 +185,7 @@ const CVWebsite = () => {
                   rel="noopener noreferrer"
                 >
                   <BookCheck size={16} />
-                  Grades
+                  Degree & Grades
                 </a>
               </div>
 
@@ -195,7 +219,7 @@ const CVWebsite = () => {
                   rel="noopener noreferrer"
                 >
                   <BookCheck size={16} />
-                  Grades
+                  Degree & Grades
                 </a>
               </div>
             </div>
@@ -353,6 +377,30 @@ const CVWebsite = () => {
             </div>
             <div className="bg-white p-6 rounded-lg shadow-sm">
               <ul className="space-y-4 text-gray-600">
+                <li className="flex items-center gap-2">
+                  <a
+                    href="https://drive.google.com/file/d/1jS7MeY0iZA33X0UffKoNxZBHcLGOSCYx/view?usp=sharing"
+                    className="text-blue-600 hover:text-blue-800 flex items-center gap-2"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FileBadge size={16} className="text-blue-600" />
+                    Master's dissertation - MIMO physical layer security using
+                    multiple Reconfigurable Intelligent Surfaces
+                  </a>
+                </li>
+                <li className="flex items-center gap-2">
+                  <a
+                    href="https://ieeexplore.ieee.org/document/11054099"
+                    className="text-blue-600 hover:text-blue-800 flex items-center gap-2"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FileBadge size={16} className="text-blue-600" />
+                    Poster: Multi-Receiver Physical Layer Security Using
+                    Reconfigurable Intelligent Surfaces
+                  </a>
+                </li>
                 <li className="flex items-center gap-2">
                   <a
                     href="https://drive.google.com/file/d/1GL6xkV0TNDhgiAwDzCbjxsiwcGI-l9Y-/view?usp=sharing"
