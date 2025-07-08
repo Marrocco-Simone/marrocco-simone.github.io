@@ -414,6 +414,17 @@ const CVWebsite = () => {
                 </li>
                 <li className="flex items-center gap-2">
                   <a
+                    href="https://drive.google.com/file/d/19hU47HTiTprVjn8w--J3gGsfS0NYtGSM/view"
+                    className="text-blue-600 hover:text-blue-800 flex items-center gap-2"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FileBadge size={16} className="text-blue-600" />
+                    Bachelor's dissertation - Load Balancing for Web Apps
+                  </a>
+                </li>
+                <li className="flex items-center gap-2">
+                  <a
                     href="https://drive.google.com/file/d/17jI1zyXzyaUpWyu4WjfayTT9-xjXnp0U/view?usp=sharing"
                     className="text-blue-600 hover:text-blue-800 flex items-center gap-2"
                     target="_blank"
@@ -433,18 +444,6 @@ const CVWebsite = () => {
                     <FileBadge size={16} className="text-blue-600" />
                     Server Side Public License - Cloud providers and the future
                     of open source
-                  </a>
-                </li>
-
-                <li className="flex items-center gap-2">
-                  <a
-                    href="https://drive.google.com/file/d/19hU47HTiTprVjn8w--J3gGsfS0NYtGSM/view"
-                    className="text-blue-600 hover:text-blue-800 flex items-center gap-2"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <FileBadge size={16} className="text-blue-600" />
-                    Bachelor's dissertation - Load Balancing for Web Apps
                   </a>
                 </li>
               </ul>
