@@ -10,12 +10,16 @@ export const documents: DocumentLink[] = [
     href: "https://vnc2026.ieee-vnc.org/",
   },
   {
-    text: "Master's dissertation - MIMO physical layer security using multiple Reconfigurable Intelligent Surfaces",
-    href: "https://drive.google.com/file/d/1jS7MeY0iZA33X0UffKoNxZBHcLGOSCYx/view?usp=sharing",
+    text: "S. Marrocco, P. Casari, M. Segata — \"Exploiting Reconfigurable Intelligent Surfaces to Achieve Multi-Receiver Physical Layer Security\" — IEEE IOLTS 2025, Chania, Greece",
+    href: "https://ieeexplore.ieee.org/document/11116835/",
   },
   {
-    text: "Poster: Multi-Receiver Physical Layer Security Using Reconfigurable Intelligent Surfaces",
+    text: "S. Marrocco, P. Casari, M. Segata — \"Poster: Multi-Receiver Physical Layer Security Using Reconfigurable Intelligent Surfaces\" — IEEE VNC 2025, Porto, Portugal",
     href: "https://ieeexplore.ieee.org/document/11054099",
+  },
+  {
+    text: "Master's dissertation - MIMO physical layer security using multiple Reconfigurable Intelligent Surfaces",
+    href: "https://drive.google.com/file/d/1jS7MeY0iZA33X0UffKoNxZBHcLGOSCYx/view?usp=sharing",
   },
   {
     text: "Predicting Economics Figures with Statistical Models",
