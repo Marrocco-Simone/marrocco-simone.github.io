@@ -12,7 +12,7 @@ export const workExperience: WorkExperience[] = [
     title: "Founder & MERN Developer",
     company: "Judo in Cloud",
     description:
-      "Developed a comprehensive web application for managing martial arts competitions using the MERN stack (MongoDB, Express, React, NextJS). Helped different organizations to manage over 4000 complessive athletes.",
+      "Developed a comprehensive web application for managing martial arts competitions using the MERN stack (MongoDB, Express, React, NextJS). Helped different organizations to manage over 10000 complessive athletes.",
     links: [
       {
         text: "Visit Project",

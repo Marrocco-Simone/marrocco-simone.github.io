@@ -4,7 +4,7 @@ export const softSkills: SkillCategory[] = [
   {
     title: "Leadership & Management",
     skills: [
-      "Project Leadership - Led development of Judo in Cloud managing 4000+ athletes",
+      "Project Leadership - Led development of Judo in Cloud managing 10000+ athletes",
       "Strategic Planning - Developed and executed business strategy for cloud-based solutions",
       "Team Coordination - Experience in goal setting and team direction",
     ],
