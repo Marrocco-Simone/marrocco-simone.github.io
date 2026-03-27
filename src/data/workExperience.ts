@@ -2,6 +2,13 @@ import type { WorkExperience } from "../types";
 
 export const workExperience: WorkExperience[] = [
   {
+    title: "Teaching Assistant - Computer Networks (Reti)",
+    company: "University of Trento - DISI",
+    description:
+      "Working as laboratory assistant in the Computer Networks (Reti) course for the academic year 2025/2026. Responsibilities include lab sessions, student support, and didactic-integrative activities.",
+    links: [],
+  },
+  {
     title: "Founder & MERN Developer",
     company: "Judo in Cloud",
     description:

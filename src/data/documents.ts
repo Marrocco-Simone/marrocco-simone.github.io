@@ -2,6 +2,14 @@ import type { DocumentLink } from "../types";
 
 export const documents: DocumentLink[] = [
   {
+    text: "S. Marrocco, P. Casari, M. Segata — \"RIS-Based Physical Layer Security: Realistic Evaluation and Challenges Ahead\" — WONS 2026, Crans-Montana, Switzerland",
+    href: "https://2026.wons-conference.org/",
+  },
+  {
+    text: "S. Marrocco, L. Maccari, M. Segata — \"In Ray Tracing We Trust? On the Usage of Ray Tracing for Vehicular Network Simulations\" — Accepted at IEEE VNC 2026, Montreal, Canada",
+    href: "https://vnc2026.ieee-vnc.org/",
+  },
+  {
     text: "Master's dissertation - MIMO physical layer security using multiple Reconfigurable Intelligent Surfaces",
     href: "https://drive.google.com/file/d/1jS7MeY0iZA33X0UffKoNxZBHcLGOSCYx/view?usp=sharing",
   },
