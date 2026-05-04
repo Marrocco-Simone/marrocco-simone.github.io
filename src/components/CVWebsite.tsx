@@ -33,18 +33,6 @@ const CVWebsite = () => {
 
       <main className="container mx-auto px-4 py-12">
         <div className="max-w-4xl mx-auto space-y-12">
-          {/* Work Experience Section */}
-          <Section
-            icon={<Briefcase className="text-blue-600" size={24} />}
-            title="Work Experience"
-          >
-            <div className="space-y-6">
-              {workExperience.map((experience, index) => (
-                <WorkExperienceCard key={index} experience={experience} />
-              ))}
-            </div>
-          </Section>
-
           {/* Education Section */}
           <Section
             icon={<GraduationCap className="text-blue-600" size={24} />}
@@ -53,6 +41,18 @@ const CVWebsite = () => {
             <div className="space-y-6">
               {education.map((edu, index) => (
                 <EducationCard key={index} education={edu} />
+              ))}
+            </div>
+          </Section>
+
+          {/* Work Experience Section */}
+          <Section
+            icon={<Briefcase className="text-blue-600" size={24} />}
+            title="Work Experience"
+          >
+            <div className="space-y-6">
+              {workExperience.map((experience, index) => (
+                <WorkExperienceCard key={index} experience={experience} />
               ))}
             </div>
           </Section>
