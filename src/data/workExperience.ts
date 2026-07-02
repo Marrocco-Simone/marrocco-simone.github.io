@@ -6,7 +6,12 @@ export const workExperience: WorkExperience[] = [
     company: "University of Trento - DISI",
     description:
       "Working as laboratory assistant in the Computer Networks (Reti) course for the academic year 2025/2026. Responsibilities include lab sessions, student support, and didactic-integrative activities.",
-    links: [],
+    links: [
+      {
+        text: "View teaching activities",
+        href: "https://webapps.unitn.it/du/it/Persona/PER0197435/Didattica",
+      },
+    ],
   },
   {
     title: "Founder & MERN Developer",
