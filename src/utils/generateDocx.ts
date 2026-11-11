@@ -198,7 +198,7 @@ export async function generateAndDownloadDocx() {
 
   sections.push(sectionHeading("Work Experience"));
   for (const exp of workExperience) {
-    sections.push(entryTitle(exp.title, exp.company));
+    sections.push(entryTitle(exp.company, exp.title));
     if (exp.period) sections.push(descriptionParagraph(exp.period));
     sections.push(descriptionParagraph(exp.description));
     for (const detail of exp.details ?? []) {
@@ -280,6 +280,8 @@ export async function generateAndDownloadDocx() {
   const link = document.createElement("a");
   link.href = url;
   link.download = "Marrocco_Simone_CV.docx";
+  document.body.append(link);
   link.click();
-  URL.revokeObjectURL(url);
+  link.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
 }

@@ -14,36 +14,28 @@ export const technicalSkills: SkillCategory[] = [
     title: "Software Architecture",
     skills: [
       "Docker and Kubernetes",
-      "Google Cloud (Build, Run, Domain)",
+      "Google Cloud (Build, Run, Storage)",
       "Nginx",
       "Load Testing (Locust.io, K6.io)",
+      "Network testing (Wireshark, Kathará)",
     ],
   },
   {
-    title: "Frontend Development",
+    title: "Web Development",
     skills: [
-      "React, AngularJS, SvelteJS",
-      "NextJS, Astro",
-      "Flutter",
-      "Tailwind CSS",
-    ],
-  },
-  {
-    title: "Backend Development",
-    skills: [
-      "NodeJS/Express & Deno/Hono",
-      "Java Spring",
-      "MongoDB, Firebase",
-      "MySQL, PostgreSQL",
+      "JS libraries: React, Svelte",
+      "JS frameworks: NextJS, Astro",
+      "APIs: Node/Express, Java Spring",
+      "Mobile: Expo and React Native, Flutter",
     ],
   },
   {
     title: "Languages",
     skills: [
-      "C/C++ (including CUDA)",
-      "Rust",
-      "C#, Java",
-      "JavaScript, TypeScript & Python",
+      "Low level: C, C++, CUDA",
+      "OOP: Rust, C#, Java",
+      "JIT: JavaScript, TypeScript, Python",
+      "Database: SQL, MongoDB",
     ],
   },
 ];

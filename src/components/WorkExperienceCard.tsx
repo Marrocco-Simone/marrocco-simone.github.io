@@ -16,9 +16,9 @@ const WorkExperienceCard: React.FC<WorkExperienceCardProps> = ({
         </div>
       )}
       <h3 className="font-display text-xl font-semibold leading-[1.3]">
-        {experience.title}
+        {experience.company}
       </h3>
-      <div className="font-display text-sm text-muted">{experience.company}</div>
+      <div className="font-display text-sm text-muted">{experience.title}</div>
       <p className="mb-2.5 mt-2 text-[15px] text-ink-soft">
         {experience.description}
       </p>
