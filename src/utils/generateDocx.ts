@@ -10,7 +10,6 @@ import {
   TabStopPosition,
   TabStopType,
 } from "docx";
-import { saveAs } from "file-saver";
 import { personalInfo } from "../data/personalInfo";
 import { workExperience } from "../data/workExperience";
 import { education } from "../data/education";
@@ -277,5 +276,10 @@ export async function generateAndDownloadDocx() {
   });
 
   const blob = await Packer.toBlob(doc);
-  saveAs(blob, "Marrocco_Simone_CV.docx");
+  const url = URL.createObjectURL(blob);
+  const link = document.createElement("a");
+  link.href = url;
+  link.download = "Marrocco_Simone_CV.docx";
+  link.click();
+  URL.revokeObjectURL(url);
 }
