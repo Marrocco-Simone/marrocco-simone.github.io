@@ -46,8 +46,3 @@ export interface Publication {
   details: string;
   href: string;
 }
-
-export interface NewsItem {
-  date: string;
-  text: string;
-}

@@ -42,11 +42,11 @@ const Header: React.FC<HeaderProps> = ({ personalInfo }) => {
               {personalInfo.name}
             </h1>
           </div>
-          <ul className="mb-[26px] flex flex-wrap gap-x-[18px] gap-y-2 font-display text-[15px] font-semibold text-navy-text">
+          <ul className="mb-[26px] flex flex-col gap-x-[18px] gap-y-1 sm:flex-row sm:flex-wrap font-display text-[15px] font-semibold text-navy-text">
             {personalInfo.roles.map((role, i) => (
               <li key={role} className="flex gap-[18px]">
                 {i > 0 && (
-                  <span aria-hidden="true" className="text-navy-dim">
+                  <span aria-hidden="true" className="hidden text-navy-dim sm:inline">
                     /
                   </span>
                 )}
