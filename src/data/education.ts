@@ -12,12 +12,10 @@ export const education: Education[] = [
       {
         text: "Research group",
         href: "https://manta.disi.unitn.it/",
-        icon: "microscope",
       },
       {
         text: "University profile",
         href: "https://webapps.unitn.it/du/it/Persona/PER0197435/Pubblicazioni",
-        icon: "microscope",
       },
     ],
   },
@@ -31,7 +29,6 @@ export const education: Education[] = [
       {
         text: "Degree & Grades",
         href: "https://drive.google.com/file/d/16BduicjLgpSvjpTM7FD-Ybtio-rtKykW/view?usp=sharing",
-        icon: "bookCheck",
       },
     ],
   },
@@ -43,7 +40,6 @@ export const education: Education[] = [
       {
         text: "Grades",
         href: "https://drive.google.com/file/d/1NX-fTekIQCbeTxfpHmWBgF0MdcK7BQYz/view?usp=sharing",
-        icon: "bookCheck",
       },
     ],
   },
@@ -56,7 +52,6 @@ export const education: Education[] = [
       {
         text: "Degree & Grades",
         href: "https://drive.google.com/file/d/1dqj_6ackcfFEAO8rvdC84327qS6juLOI/view?usp=sharing",
-        icon: "bookCheck",
       },
     ],
   },

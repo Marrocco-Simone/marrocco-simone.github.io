@@ -20,7 +20,9 @@ import { academicService } from "../data/academicService";
 import { certifications } from "../data/certifications";
 
 const FONT = "Calibri";
-const PRIMARY_COLOR = "1a3c6e";
+const PRIMARY_COLOR = "0e1b33";
+const LINK_COLOR = "c8102e";
+const stripLinks = (text: string) => text.replace(/\[([^\]]+)\]\([^)]+\)/g, "$1");
 
 function sectionHeading(title: string): Paragraph {
   return new Paragraph({
@@ -111,7 +113,7 @@ function linkParagraph(text: string, href: string): Paragraph {
             text,
             font: FONT,
             size: 20,
-            color: "2563eb",
+            color: LINK_COLOR,
             underline: {},
           }),
         ],
@@ -124,7 +126,6 @@ function linkParagraph(text: string, href: string): Paragraph {
 export async function generateAndDownloadDocx() {
   const sections: Paragraph[] = [];
 
-  // Header
   sections.push(
     new Paragraph({
       alignment: AlignmentType.CENTER,
@@ -144,7 +145,7 @@ export async function generateAndDownloadDocx() {
       spacing: { after: 80 },
       children: [
         new TextRun({
-          text: personalInfo.title,
+          text: personalInfo.roles.join(" · "),
           font: FONT,
           size: 24,
           color: "555555",
@@ -155,7 +156,7 @@ export async function generateAndDownloadDocx() {
       alignment: AlignmentType.CENTER,
       spacing: { after: 200 },
       children: personalInfo.contacts.flatMap((contact, i) => {
-        const runs: TextRun[] = [];
+        const runs: (TextRun | ExternalHyperlink)[] = [];
         if (i > 0) {
           runs.push(
             new TextRun({
@@ -167,18 +168,35 @@ export async function generateAndDownloadDocx() {
           );
         }
         runs.push(
-          new TextRun({
-            text: contact.value,
-            font: FONT,
-            size: 18,
+          new ExternalHyperlink({
+            link: contact.href,
+            children: [
+              new TextRun({
+                text: contact.value,
+                font: FONT,
+                size: 18,
+                color: LINK_COLOR,
+                underline: {},
+              }),
+            ],
           })
         );
         return runs;
       }),
-    })
+    }),
+    ...personalInfo.intro.map((paragraph) => descriptionParagraph(stripLinks(paragraph)))
   );
 
-  // Work Experience
+  sections.push(sectionHeading("Education"));
+  for (const edu of education) {
+    sections.push(entryTitle(edu.title, edu.institution));
+    if (edu.period) sections.push(descriptionParagraph(edu.period));
+    sections.push(descriptionParagraph(edu.description));
+    for (const link of edu.links) {
+      sections.push(linkParagraph(link.text, link.href));
+    }
+  }
+
   sections.push(sectionHeading("Work Experience"));
   for (const exp of workExperience) {
     sections.push(entryTitle(exp.title, exp.company));
@@ -192,24 +210,22 @@ export async function generateAndDownloadDocx() {
     }
   }
 
-  // Education
-  sections.push(sectionHeading("Education"));
-  for (const edu of education) {
-    sections.push(entryTitle(edu.title, edu.institution));
-    if (edu.period) sections.push(descriptionParagraph(edu.period));
-    sections.push(descriptionParagraph(edu.description));
-    for (const link of edu.links) {
-      sections.push(linkParagraph(link.text, link.href));
-    }
-  }
-
-  // Documents & Publications
   sections.push(sectionHeading("Documents & Publications"));
-  for (const doc of [...publications, ...documents]) {
+  for (const pub of publications) {
+    sections.push(
+      linkParagraph(`${pub.authors} — "${pub.title}" — ${pub.details}`, pub.href)
+    );
+  }
+  sections.push(
+    new Paragraph({
+      spacing: { before: 120, after: 40 },
+      children: [new TextRun({ text: "Other documents", font: FONT, size: 20, bold: true })],
+    })
+  );
+  for (const doc of documents) {
     sections.push(linkParagraph(doc.text, doc.href));
   }
 
-  // Technical Skills
   sections.push(sectionHeading("Technical Skills"));
   for (const category of technicalSkills) {
     sections.push(
@@ -232,13 +248,11 @@ export async function generateAndDownloadDocx() {
     );
   }
 
-  // Academic Service
   sections.push(sectionHeading("Academic Service"));
   for (const item of academicService) {
     sections.push(linkParagraph(item.text, item.href));
   }
 
-  // Certifications
   sections.push(sectionHeading("Certifications & Achievements"));
   for (const cert of certifications) {
     sections.push(linkParagraph(cert.text, cert.href));

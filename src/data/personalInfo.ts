@@ -2,7 +2,7 @@ import type { PersonalInfo } from "../types";
 
 export const personalInfo: PersonalInfo = {
   name: "Simone Marrocco",
-  title: "PhD Student in Telecommunications · Founder & Full Stack Engineer",
+  roles: ["PhD Student in Telecommunications", "Founder & Full Stack Engineer"],
   intro: [
     "PhD student at the University of Trento, in the [MANTA](https://manta.disi.unitn.it/) group. I study physical layer security with Reconfigurable Intelligent Surfaces for V2X and cooperative autonomous vehicles.",
     "Solo founder and developer of [Judo in Cloud](https://judoincloud.com): 40+ competitions and about 14,000 athletes, deployed on site with my own fleet of laptops, tablets and screens.",
@@ -22,7 +22,7 @@ export const personalInfo: PersonalInfo = {
     {
       type: "github",
       value: "GitHub Profile",
-      href: "http://github.com/Marrocco-Simone",
+      href: "https://github.com/Marrocco-Simone",
     },
     {
       type: "linkedin",

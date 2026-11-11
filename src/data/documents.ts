@@ -3,22 +3,30 @@ import type { DocumentLink, Publication } from "../types";
 export const publications: Publication[] = [
   {
     venue: "VNC 2026",
-    text: 'S. Marrocco, L. Maccari, M. Segata — "In Ray Tracing We Trust? On the Usage of Ray Tracing for Vehicular Network Simulations" — 17th IEEE Vehicular Networking Conference (VNC 2026), Montréal, Canada, pp. 1–8',
+    authors: "S. Marrocco, L. Maccari, M. Segata",
+    title: "In Ray Tracing We Trust? On the Usage of Ray Tracing for Vehicular Network Simulations",
+    details: "17th IEEE Vehicular Networking Conference (VNC 2026), Montréal, Canada, pp. 1–8",
     href: "https://doi.org/10.1109/VNC69225.2026.11629156",
   },
   {
     venue: "WONS 2026",
-    text: 'S. Marrocco, P. Casari, M. Segata — "RIS-Based Physical Layer Security: Realistic Evaluation and Challenges Ahead" — 21st IEEE/IFIP Wireless On-demand Network systems and Services Conference (WONS 2026), Crans-Montana, Switzerland, pp. 85–88',
+    authors: "S. Marrocco, P. Casari, M. Segata",
+    title: "RIS-Based Physical Layer Security: Realistic Evaluation and Challenges Ahead",
+    details: "21st IEEE/IFIP Wireless On-demand Network systems and Services Conference (WONS 2026), Crans-Montana, Switzerland, pp. 85–88",
     href: "https://doi.org/10.23919/WONS68803.2026.11501841",
   },
   {
     venue: "IOLTS 2025",
-    text: 'S. Marrocco, P. Casari, M. Segata — "Exploiting Reconfigurable Intelligent Surfaces to Achieve Multi-Receiver Physical Layer Security" — 31st IEEE International Symposium on On-Line Testing and Robust System Design (IOLTS 2025), Ischia, Italy',
+    authors: "S. Marrocco, P. Casari, M. Segata",
+    title: "Exploiting Reconfigurable Intelligent Surfaces to Achieve Multi-Receiver Physical Layer Security",
+    details: "31st IEEE International Symposium on On-Line Testing and Robust System Design (IOLTS 2025), Ischia, Italy",
     href: "https://doi.org/10.1109/IOLTS65288.2025.11116835",
   },
   {
     venue: "VNC 2025",
-    text: 'S. Marrocco, P. Casari, M. Segata — "Multi-Receiver Physical Layer Security Using Reconfigurable Intelligent Surfaces" — 16th IEEE Vehicular Networking Conference (VNC 2025), Poster Session, Porto, Portugal',
+    authors: "S. Marrocco, P. Casari, M. Segata",
+    title: "Multi-Receiver Physical Layer Security Using Reconfigurable Intelligent Surfaces",
+    details: "16th IEEE Vehicular Networking Conference (VNC 2025), Poster Session, Porto, Portugal",
     href: "https://doi.org/10.1109/VNC64509.2025.11054099",
   },
 ];

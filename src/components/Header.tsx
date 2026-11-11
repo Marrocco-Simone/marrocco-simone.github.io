@@ -33,7 +33,7 @@ const Header: React.FC<HeaderProps> = ({ personalInfo }) => {
           <div className="mb-[18px] flex items-center gap-4">
             <img
               src="/simone.jpg"
-              alt="Simone Marrocco"
+              alt={personalInfo.name}
               width={72}
               height={72}
               className="h-[72px] w-[72px] shrink-0 rounded-full object-cover lg:hidden"
@@ -43,7 +43,7 @@ const Header: React.FC<HeaderProps> = ({ personalInfo }) => {
             </h1>
           </div>
           <ul className="mb-[26px] flex flex-wrap gap-x-[18px] gap-y-2 font-display text-[15px] font-semibold text-navy-text">
-            {personalInfo.title.split(" · ").map((role, i) => (
+            {personalInfo.roles.map((role, i) => (
               <li key={role} className="flex gap-[18px]">
                 {i > 0 && (
                   <span aria-hidden="true" className="text-navy-dim">
@@ -72,7 +72,7 @@ const Header: React.FC<HeaderProps> = ({ personalInfo }) => {
         <address className="hidden self-start rounded-[10px] border border-navy-line bg-navy2 p-[22px] font-display text-sm not-italic leading-[1.7] text-navy-text lg:block">
           <img
             src="/simone.jpg"
-            alt="Simone Marrocco"
+            alt={personalInfo.name}
             width={560}
             height={560}
             className="mb-4 aspect-square w-full rounded-[10px] object-cover"

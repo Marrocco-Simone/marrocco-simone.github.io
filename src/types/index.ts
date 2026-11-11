@@ -1,20 +1,18 @@
-// Personal Info Types
 export interface Contact {
-  type: string;
+  type: "email" | "github" | "linkedin";
   value: string;
   href: string;
 }
 
 export interface PersonalInfo {
   name: string;
-  title: string;
+  roles: string[];
   intro: string[];
   affiliation: string[];
   contacts: Contact[];
 }
 
-// Work Experience Types
-export interface WorkExperienceLink {
+export interface DocumentLink {
   text: string;
   href: string;
 }
@@ -25,14 +23,7 @@ export interface WorkExperience {
   period?: string;
   description: string;
   details?: string[];
-  links: WorkExperienceLink[];
-}
-
-// Education Types
-export interface EducationLink {
-  text: string;
-  href: string;
-  icon?: string;
+  links: DocumentLink[];
 }
 
 export interface Education {
@@ -40,28 +31,22 @@ export interface Education {
   institution: string;
   period?: string;
   description: string;
-  links: EducationLink[];
+  links: DocumentLink[];
 }
 
-// Skills Types
 export interface SkillCategory {
   title: string;
   skills: string[];
 }
 
-// Document Types
-export interface DocumentLink {
-  text: string;
-  href: string;
-}
-
 export interface Publication {
   venue: string;
-  text: string;
+  authors: string;
+  title: string;
+  details: string;
   href: string;
 }
 
-// News Types
 export interface NewsItem {
   date: string;
   text: string;
