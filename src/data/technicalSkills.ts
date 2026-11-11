@@ -7,7 +7,7 @@ export const technicalSkills: SkillCategory[] = [
       "Vercel AI SDK, tool-calling agents and subagents",
       "context compaction and prompt caching",
       "document retrieval (RAG) and OCR",
-      "Claude, Gemini, Open weight models via Fireworks and OpenRouter",
+      "Claude, Gemini, open-weight models via Fireworks and OpenRouter",
     ],
   },
   {
@@ -32,10 +32,10 @@ export const technicalSkills: SkillCategory[] = [
   {
     title: "Languages",
     skills: [
-      "Low level: C, C++, CUDA",
-      "OOP: Rust, C#, Java",
-      "JIT: JavaScript, TypeScript, Python",
-      "Database: SQL, MongoDB",
+      "C, C++, CUDA",
+      "Rust, C#, Java",
+      "JavaScript, TypeScript, Python",
+      "SQL (PostgreSQL, MySQL), MongoDB",
     ],
   },
 ];

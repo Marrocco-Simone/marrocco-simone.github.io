@@ -2,8 +2,7 @@ import type { Education } from "../types";
 
 export const education: Education[] = [
   {
-    title:
-      "PhD Student - Information Engineering and Computer Science (IECS, cycle 41)",
+    title: "PhD Student - Information Engineering and Computer Science",
     institution: "University of Trento - DISI",
     period: "Nov 2025 - expected 2028",
     description:
@@ -47,7 +46,7 @@ export const education: Education[] = [
     title: "Bachelor's in Computer Science",
     institution: "University of Trento",
     description:
-      'Graduated with full marks cum laude. Thesis: "Load Balancing for Web Apps".',
+      'Graduated with full marks cum laude. Thesis: "Load Balancing for Web Apps" (supervisor: Paolo Bouquet).',
     links: [
       {
         text: "Degree & Grades",

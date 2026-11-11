@@ -1,4 +1,4 @@
-import type { DocumentLink, Publication } from "../types";
+import type { DocumentLink, Publication, UnderReviewPaper } from "../types";
 
 export const publications: Publication[] = [
   {
@@ -28,6 +28,27 @@ export const publications: Publication[] = [
     title: "Multi-Receiver Physical Layer Security Using Reconfigurable Intelligent Surfaces",
     details: "16th IEEE Vehicular Networking Conference (VNC 2025), Poster Session, Porto, Portugal",
     href: "https://doi.org/10.1109/VNC64509.2025.11054099",
+  },
+];
+
+export const underReview: UnderReviewPaper[] = [
+  {
+    venue: "WONS 2027",
+    authors: "S. Marrocco, P. Casari, M. Segata",
+    title: "Fluid Reconfigurable Intelligent Surfaces: Exploiting Element Repositioning to Improve Physical Layer Security Performance",
+    details: "22nd IEEE/IFIP Wireless On-demand Network systems and Services Conference (WONS 2027)",
+  },
+  {
+    venue: "COMCOM",
+    authors: "S. Marrocco, E. Scaltrito, P. Casari, M. Segata",
+    title: "From Statistical Channel Models to Ray Tracing: Enabling RIS-Assisted Private Communications under Realistic Propagation and Discrete Phase Constraints",
+    details: "Elsevier Computer Communications",
+  },
+  {
+    venue: "TWC",
+    authors: "S. Marrocco, P. Casari, M. Segata",
+    title: "Physical Layer Security for Generalized Multi-RIS/Multi-Receiver Configurations",
+    details: "IEEE Transactions on Wireless Communications",
   },
 ];
 

@@ -13,7 +13,7 @@ import {
 import { personalInfo } from "../data/personalInfo";
 import { workExperience } from "../data/workExperience";
 import { education } from "../data/education";
-import { publications, documents } from "../data/documents";
+import { publications, underReview, documents } from "../data/documents";
 import { technicalSkills } from "../data/technicalSkills";
 import { academicService } from "../data/academicService";
 import { certifications } from "../data/certifications";
@@ -84,6 +84,13 @@ function descriptionParagraph(text: string): Paragraph {
         size: 20,
       }),
     ],
+  });
+}
+
+function subHeading(text: string): Paragraph {
+  return new Paragraph({
+    spacing: { before: 120, after: 40 },
+    children: [new TextRun({ text, font: FONT, size: 20, bold: true })],
   });
 }
 
@@ -209,23 +216,22 @@ export async function generateAndDownloadDocx() {
     }
   }
 
-  sections.push(sectionHeading("Documents & Publications"));
+  sections.push(sectionHeading("Publications"));
   for (const pub of publications) {
     sections.push(
       linkParagraph(`${pub.authors} — "${pub.title}" — ${pub.details}`, pub.href)
     );
   }
-  sections.push(
-    new Paragraph({
-      spacing: { before: 120, after: 40 },
-      children: [new TextRun({ text: "Other documents", font: FONT, size: 20, bold: true })],
-    })
-  );
+  sections.push(subHeading("Under review"));
+  for (const paper of underReview) {
+    sections.push(bulletItem(`${paper.authors} — "${paper.title}" — ${paper.details}`));
+  }
+  sections.push(subHeading("Other documents"));
   for (const doc of documents) {
     sections.push(linkParagraph(doc.text, doc.href));
   }
 
-  sections.push(sectionHeading("Technical Skills"));
+  sections.push(sectionHeading("Skills"));
   for (const category of technicalSkills) {
     sections.push(
       new Paragraph({
@@ -252,10 +258,23 @@ export async function generateAndDownloadDocx() {
     sections.push(linkParagraph(item.text, item.href));
   }
 
-  sections.push(sectionHeading("Certifications & Achievements"));
+  sections.push(sectionHeading("Awards & Certifications"));
   for (const cert of certifications) {
     sections.push(linkParagraph(cert.text, cert.href));
   }
+
+  sections.push(
+    new Paragraph({
+      spacing: { before: 400 },
+      children: [
+        new TextRun({
+          text: `Trento, ${new Date().toLocaleDateString("en-GB")}`,
+          font: FONT,
+          size: 20,
+        }),
+      ],
+    })
+  );
 
   const doc = new Document({
     sections: [

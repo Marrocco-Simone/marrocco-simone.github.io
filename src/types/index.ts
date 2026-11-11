@@ -39,10 +39,13 @@ export interface SkillCategory {
   skills: string[];
 }
 
-export interface Publication {
+export interface UnderReviewPaper {
   venue: string;
   authors: string;
   title: string;
   details: string;
+}
+
+export interface Publication extends UnderReviewPaper {
   href: string;
 }

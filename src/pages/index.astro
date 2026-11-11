@@ -6,11 +6,11 @@ import { personalInfo } from "../data/personalInfo";
 
 const navLinks = [
   { href: "#education", label: "Education" },
-  { href: "#experience", label: "Experience" },
+  { href: "#experience", label: "Work Experience" },
   { href: "#publications", label: "Publications" },
   { href: "#skills", label: "Skills" },
-  { href: "#service", label: "Service" },
-  { href: "#awards", label: "Awards" },
+  { href: "#service", label: "Academic Service" },
+  { href: "#awards", label: "Awards & Certifications" },
 ];
 ---
 
@@ -20,9 +20,9 @@ const navLinks = [
       <a href="#" class="mr-auto min-w-0 truncate font-display text-lg font-extrabold tracking-[-0.01em] text-ink">
         {personalInfo.name}
       </a>
-      <nav aria-label="Sections" class="hidden gap-[22px] lg:flex">
+      <nav aria-label="Sections" class="hidden gap-[22px] xl:flex">
         {navLinks.map((link) => (
-          <a href={link.href} class="font-display text-sm font-medium text-muted hover:text-ink">
+          <a href={link.href} class="whitespace-nowrap font-display text-sm font-medium text-muted hover:text-ink">
             {link.label}
           </a>
         ))}

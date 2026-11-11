@@ -82,11 +82,11 @@ export const workExperience: WorkExperience[] = [
     ],
   },
   {
-    title: "Consultant & Solo Developer",
+    title: "Consultant & Lead Developer",
     company: "Compify",
     period: "2025 - ongoing (Milano Sake Challenge 2025 and 2026)",
     description:
-      "Solo developer of a platform for managing sake and beverage competitions: producer registration, jury assignment and scoring, rankings and medals, PDF reports and labels, Stripe payments, and a mobile app for judges in five languages. Stack: Bun, Express, MongoDB, TanStack Start, Expo, Google Cloud Run. Used for the Milano Sake Challenge, one of the biggest sake competitions in Europe with over 1000 bottles from Japan and all over the world.",
+      "Lead developer of a platform for managing sake and beverage competitions: producer registration, jury assignment and scoring, rankings and medals, PDF reports and labels, Stripe payments, and a mobile app for judges in five languages. Stack: Bun, Express, MongoDB, TanStack Start, Expo, Google Cloud Run. Used for the Milano Sake Challenge, one of the biggest sake competitions in Europe with over 1000 bottles from Japan and all over the world.",
     links: [
       {
         text: "Visit Project",
@@ -95,19 +95,6 @@ export const workExperience: WorkExperience[] = [
       {
         text: "Visit the event page",
         href: "https://milanosakechallenge.com",
-      },
-    ],
-  },
-  {
-    title: "Full Stack Developer",
-    company: "CiaoManager - Hotel in Cloud",
-    period: "Dec 2021 - May 2022",
-    description:
-      "Six-month internship developing a web application for hotel and B&B management using Express, MySQL and React.",
-    links: [
-      {
-        text: "Visit Website",
-        href: "https://www.hotelincloud.com/",
       },
     ],
   },
@@ -121,6 +108,19 @@ export const workExperience: WorkExperience[] = [
       {
         text: "Visit Repo",
         href: "https://github.com/SmarterGame/new-sensation",
+      },
+    ],
+  },
+  {
+    title: "Full Stack Developer",
+    company: "CiaoManager - Hotel in Cloud",
+    period: "Dec 2021 - May 2022",
+    description:
+      "Six-month internship developing a web application for hotel and B&B management using Express, MySQL and React.",
+    links: [
+      {
+        text: "Visit Website",
+        href: "https://www.hotelincloud.com/",
       },
     ],
   },

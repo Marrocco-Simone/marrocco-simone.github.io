@@ -12,7 +12,7 @@ import Publications from "./Publications";
 import { personalInfo } from "../data/personalInfo";
 import { workExperience } from "../data/workExperience";
 import { education } from "../data/education";
-import { publications, documents } from "../data/documents";
+import { publications, underReview, documents } from "../data/documents";
 import { technicalSkills } from "../data/technicalSkills";
 import { academicService } from "../data/academicService";
 import { certifications } from "../data/certifications";
@@ -40,15 +40,19 @@ const CVWebsite = () => {
             </div>
           </Section>
 
-          <Section id="publications" title="Documents & Publications">
+          <Section id="publications" title="Publications">
             <Publications publications={publications} />
+            <h3 className="mb-1 mt-8 font-display text-xl font-semibold leading-[1.3]">
+              Under review
+            </h3>
+            <Publications publications={underReview} />
             <h3 className="mb-1 mt-8 font-display text-xl font-semibold leading-[1.3]">
               Other documents
             </h3>
             <DocumentLinks documents={documents} />
           </Section>
 
-          <Section id="skills" title="Technical Skills">
+          <Section id="skills" title="Skills">
             <div className="grid gap-4 md:grid-cols-2">
               {technicalSkills.map((skillCategory) => (
                 <SkillsCard key={skillCategory.title} skillCategory={skillCategory} />
@@ -60,7 +64,7 @@ const CVWebsite = () => {
             <DocumentLinks documents={academicService} />
           </Section>
 
-          <Section id="awards" title="Certifications & Achievements">
+          <Section id="awards" title="Awards & Certifications">
             <DocumentLinks documents={certifications} />
           </Section>
         </main>
