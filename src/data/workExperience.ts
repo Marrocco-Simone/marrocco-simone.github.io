@@ -52,8 +52,8 @@ export const workExperience: WorkExperience[] = [
     ],
   },
   {
-    title: "Solo Developer",
-    company: "Judo in Cloud CARE System",
+    title: "Developer",
+    company: "CARE System - open source, part of Judo in Cloud",
     period: "2023 - ongoing",
     description:
       "Open-source video replay system for judo referees (Camera Assistant Referee Enhanced). Records the webcam in the browser to IndexedDB and plays it back with DVR controls: rewind, slow motion, frame-by-frame and zoom, fully offline. The Electron desktop app streams to YouTube over HLS with one hardware H.264 encoder. Vanilla JavaScript, MediaSource API, Electron.",
@@ -101,6 +101,7 @@ export const workExperience: WorkExperience[] = [
   {
     title: "Full Stack Developer",
     company: "CiaoManager - Hotel in Cloud",
+    period: "Dec 2021 - May 2022",
     description:
       "Six-month internship developing a web application for hotel and B&B management using Express, MySQL and React.",
     links: [
@@ -111,10 +112,11 @@ export const workExperience: WorkExperience[] = [
     ],
   },
   {
-    title: "Research Collaboration",
-    company: "FBK (Bruno Kessler Foundation)",
+    title: "Software Developer",
+    company: "University of Trento - EMPATHY project (PRIN 2017)",
+    period: "May 2023 - Dec 2023",
     description:
-      "Contributed to SmartGame, an e-learning application development project. Web app made in NextJS.",
+      "Contract developer for SmarterGame, a NextJS web app to run and control primary-school math exercises. It connects to a tangible tool through MQTT (Node-RED) and to a gamification engine through a REST API, with one interface for children and one for teachers.",
     links: [
       {
         text: "Visit Repo",

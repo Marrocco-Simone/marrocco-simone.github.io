@@ -2,21 +2,6 @@ import type { DocumentLink, Publication } from "../types";
 
 export const publications: Publication[] = [
   {
-    venue: "UNDER REVIEW",
-    text: 'S. Marrocco, P. Casari, M. Segata — "Fluid Reconfigurable Intelligent Surfaces: Exploiting Element Repositioning to Improve Physical Layer Security Performance" — 22nd IEEE/IFIP Wireless On-demand Network systems and Services Conference (WONS 2027) — under review',
-    href: "https://manta.disi.unitn.it/",
-  },
-  {
-    venue: "UNDER REVIEW",
-    text: 'S. Marrocco, E. Scaltrito, P. Casari, M. Segata — "From Statistical Channel Models to Ray Tracing: Enabling RIS-Assisted Private Communications under Realistic Propagation and Discrete Phase Constraints" — Elsevier Computer Communications — under review',
-    href: "https://manta.disi.unitn.it/",
-  },
-  {
-    venue: "UNDER REVIEW",
-    text: 'S. Marrocco, P. Casari, M. Segata — "Physical Layer Security for Generalized Multi-RIS/Multi-Receiver Configurations" — IEEE Transactions on Wireless Communications — under review',
-    href: "https://manta.disi.unitn.it/",
-  },
-  {
     venue: "VNC 2026",
     text: 'S. Marrocco, L. Maccari, M. Segata — "In Ray Tracing We Trust? On the Usage of Ray Tracing for Vehicular Network Simulations" — 17th IEEE Vehicular Networking Conference (VNC 2026), Montréal, Canada, pp. 1–8',
     href: "https://doi.org/10.1109/VNC69225.2026.11629156",

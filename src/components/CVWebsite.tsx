@@ -14,7 +14,7 @@ import { workExperience } from "../data/workExperience";
 import { education } from "../data/education";
 import { publications, documents } from "../data/documents";
 import { technicalSkills } from "../data/technicalSkills";
-import { softSkills } from "../data/softSkills";
+import { academicService } from "../data/academicService";
 import { certifications } from "../data/certifications";
 import { news } from "../data/news";
 
@@ -64,7 +64,7 @@ const CVWebsite = () => {
             <Section id="publications" title="Documents & Publications">
               <Publications publications={publications} />
               <h3 className="mb-1 mt-8 font-display text-xl font-semibold leading-[1.3]">
-                Theses and other documents
+                Other documents
               </h3>
               <DocumentLinks documents={documents} />
             </Section>
@@ -77,12 +77,8 @@ const CVWebsite = () => {
               </div>
             </Section>
 
-            <Section id="soft-skills" title="Soft Skills">
-              <div className="grid gap-4 md:grid-cols-2">
-                {softSkills.map((skillCategory) => (
-                  <SkillsCard key={skillCategory.title} skillCategory={skillCategory} />
-                ))}
-              </div>
+            <Section id="service" title="Academic Service">
+              <DocumentLinks documents={academicService} />
             </Section>
 
             <Section id="awards" title="Certifications & Achievements">

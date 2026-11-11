@@ -16,7 +16,7 @@ import { workExperience } from "../data/workExperience";
 import { education } from "../data/education";
 import { publications, documents } from "../data/documents";
 import { technicalSkills } from "../data/technicalSkills";
-import { softSkills } from "../data/softSkills";
+import { academicService } from "../data/academicService";
 import { certifications } from "../data/certifications";
 
 const FONT = "Calibri";
@@ -232,25 +232,10 @@ export async function generateAndDownloadDocx() {
     );
   }
 
-  // Soft Skills
-  sections.push(sectionHeading("Soft Skills"));
-  for (const category of softSkills) {
-    sections.push(
-      new Paragraph({
-        spacing: { before: 100, after: 20 },
-        children: [
-          new TextRun({
-            text: category.title,
-            font: FONT,
-            size: 20,
-            bold: true,
-          }),
-        ],
-      })
-    );
-    for (const skill of category.skills) {
-      sections.push(bulletItem(skill));
-    }
+  // Academic Service
+  sections.push(sectionHeading("Academic Service"));
+  for (const item of academicService) {
+    sections.push(linkParagraph(item.text, item.href));
   }
 
   // Certifications
