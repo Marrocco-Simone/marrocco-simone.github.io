@@ -4,7 +4,7 @@ export const softSkills: SkillCategory[] = [
   {
     title: "Leadership & Management",
     skills: [
-      "Project Leadership - Led development of Judo in Cloud managing 10000+ athletes",
+      "Project Leadership - Led development of Judo in Cloud, managing 14,000+ athletes",
       "Strategic Planning - Developed and executed business strategy for cloud-based solutions",
       "Team Coordination - Experience in goal setting and team direction",
     ],
@@ -12,7 +12,7 @@ export const softSkills: SkillCategory[] = [
   {
     title: "Business & Analysis",
     skills: [
-      "Business Development - Successfully launched and grew Judo in Cloud platform",
+      "Business Development - Successfully launched and grew the Judo in Cloud platform",
       "Strategic Analysis - Conducted cost and load analysis for scalable applications",
       "Market Research - Researched and published analysis on cloud providers and open source",
     ],
@@ -20,7 +20,7 @@ export const softSkills: SkillCategory[] = [
   {
     title: "Communication & Interpersonal",
     skills: [
-      "Stakeholder Management - Coordinated with competition organizers for the best possible outcome",
+      "Stakeholder Management - Coordinated with competition organisers for the best possible outcome",
       "Cross-cultural Communication - International experience through Erasmus in Helsinki",
       "Technical Communication - Published research papers and technical documentation",
     ],

@@ -4,20 +4,46 @@ export const workExperience: WorkExperience[] = [
   {
     title: "Teaching Assistant - Computer Networks (Reti)",
     company: "University of Trento - DISI",
+    period: "a.a. 2025/2026 (90 hours) and 2026/2027 (80 hours)",
     description:
-      "Working as laboratory assistant in the Computer Networks (Reti) course for the academic year 2025/2026. Responsibilities include lab sessions, student support, and didactic-integrative activities.",
+      "Laboratory assistant for the Computer Networks course (Bachelor's in Computer Science, Prof. Paolo Casari): teaching of the Wireshark and Kathará network emulation labs, student support, didactic-integrative activities and supervision of lab exams.",
     links: [
       {
         text: "View teaching activities",
         href: "https://webapps.unitn.it/du/it/Persona/PER0197435/Didattica",
       },
+      {
+        text: "Kathará lab repository",
+        href: "https://github.com/Marrocco-Simone/reti-lab-kathara",
+      },
     ],
   },
   {
-    title: "Founder & MERN Developer",
-    company: "Judo in Cloud",
+    title: "University Tutor - Palestra di Algoritmi (Olympiad in Informatics)",
+    company: "University of Trento - DISI & secondary schools",
+    period: "Since a.a. 2023/2024 - ongoing",
     description:
-      "Developed a comprehensive web application for managing martial arts competitions using the MERN stack (MongoDB, Express, React, NextJS). Helped different organizations to manage over 10000 complessive athletes.",
+      "Training of high-school teams for the Italian Olympiad in Informatics on behalf of the DISI (with Prof. Alberto Montresor). Courses held in C++ and Python on algorithms and data structures, across multiple editions and schools:",
+    details: [
+      "2023/2024 - Liceo Scientifico Galilei, Trento (advanced course)",
+      "2024/2025 - Liceo Galilei and ITT Buonarroti, Trento",
+      "2025/2026 - ITT Buonarroti, Trento (students from Galilei, Da Vinci, Buonarroti; Rosmini online)",
+      "2026/2027 - Liceo Rosmini, Rovereto and ITT Buonarroti, Trento",
+      "TeacherDojo 2023, 2025 and 2026 - teacher-training workshop on algorithms and competitive programming",
+    ],
+    links: [
+      {
+        text: "Training material repository",
+        href: "https://github.com/Marrocco-Simone/palestradialgoritmi",
+      },
+    ],
+  },
+  {
+    title: "Solo Founder & Developer",
+    company: "Judo in Cloud",
+    period: "2023 - ongoing",
+    description:
+      "Solo founder and developer of a SaaS for managing judo and martial arts competitions. Handles product, sales, support and on-site deployment with a fleet of about 24 laptops, 18 tablets, TVs and cameras, up to national championships. Modules: online registration and payment reconciliation, categories, poules and draw sheets, live scoreboards and results, kata judging on tablets and club websites. Stack: Bun, Express, MongoDB, NextJS, Docker, Google Cloud Build and Cloud Run. 40+ competitions and about 14,000 athletes managed for different organisations.",
     links: [
       {
         text: "Visit Project",
@@ -26,10 +52,41 @@ export const workExperience: WorkExperience[] = [
     ],
   },
   {
-    title: "Consultant & MERN Developer",
-    company: "Compify",
+    title: "Solo Developer",
+    company: "Judo in Cloud CARE System",
+    period: "2023 - ongoing",
     description:
-      "Developed a comprehensive web application for managing sommelier competitions using the MERN stack (MongoDB, Express, React, NextJS). Helped organizing the Milano Sake Challenge, one of the biggest sake competitions in Europe with over 1000 bottles from all over Japan and the world.",
+      "Open-source video replay system for judo referees (Camera Assistant Referee Enhanced). Records the webcam in the browser to IndexedDB and plays it back with DVR controls: rewind, slow motion, frame-by-frame and zoom, fully offline. The Electron desktop app streams to YouTube over HLS with one hardware H.264 encoder. Vanilla JavaScript, MediaSource API, Electron.",
+    links: [
+      {
+        text: "Visit Project",
+        href: "https://care.judoincloud.com",
+      },
+      {
+        text: "Visit Repo",
+        href: "https://github.com/Marrocco-Simone/Judo-in-Cloud-CARE-System",
+      },
+    ],
+  },
+  {
+    title: "Founder & Developer",
+    company: "UnlockGPT",
+    period: "2025 - ongoing",
+    description:
+      "AI productivity agent that connects Gmail, Outlook, Google Workspace, Calendar, Dropbox and GitHub, and lets users work across multiple accounts in natural language. Multi-step agent with specialised subagents (email, calendar, files, web research), proactive background analysis, context compaction, prompt caching, vectorless document retrieval, OCR, per-user encryption and usage budgets. Stack: Bun, Express, MongoDB, NextJS, Vercel AI SDK, Google Cloud Run.",
+    links: [
+      {
+        text: "Visit Project",
+        href: "https://unlockgpt.ai",
+      },
+    ],
+  },
+  {
+    title: "Consultant & Solo Developer",
+    company: "Compify",
+    period: "2025 - ongoing (Milano Sake Challenge 2025 and 2026)",
+    description:
+      "Solo developer of a platform for managing sake and beverage competitions: producer registration, jury assignment and scoring, rankings and medals, PDF reports and labels, Stripe payments, and a mobile app for judges in five languages. Stack: Bun, Express, MongoDB, TanStack Start, Expo, Google Cloud Run. Used for the Milano Sake Challenge, one of the biggest sake competitions in Europe with over 1000 bottles from Japan and all over the world.",
     links: [
       {
         text: "Visit Project",
@@ -55,9 +112,9 @@ export const workExperience: WorkExperience[] = [
   },
   {
     title: "Research Collaboration",
-    company: "FBK (Bruno Kesler Research Foundation)",
+    company: "FBK (Bruno Kessler Foundation)",
     description:
-      "Contributed to SmartGame, an E-Learning application development project. Web app made in NextJs.",
+      "Contributed to SmartGame, an e-learning application development project. Web app made in NextJS.",
     links: [
       {
         text: "Visit Repo",

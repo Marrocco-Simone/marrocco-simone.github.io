@@ -20,7 +20,9 @@ export interface WorkExperienceLink {
 export interface WorkExperience {
   title: string;
   company: string;
+  period?: string;
   description: string;
+  details?: string[];
   links: WorkExperienceLink[];
 }
 
@@ -34,6 +36,7 @@ export interface EducationLink {
 export interface Education {
   title: string;
   institution: string;
+  period?: string;
   description: string;
   links: EducationLink[];
 }

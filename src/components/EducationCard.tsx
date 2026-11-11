@@ -21,6 +21,9 @@ const EducationCard: React.FC<EducationCardProps> = ({ education }) => {
     <div className="bg-white p-6 rounded-lg shadow-sm">
       <h3 className="text-xl font-semibold mb-2">{education.title}</h3>
       <h4 className="italic mb-2">{education.institution}</h4>
+      {education.period && (
+        <p className="text-sm text-gray-500 mb-2">{education.period}</p>
+      )}
       <p className="text-gray-600 mb-4">{education.description}</p>
       <div className="space-y-2">
         {education.links.map((link, index) => (

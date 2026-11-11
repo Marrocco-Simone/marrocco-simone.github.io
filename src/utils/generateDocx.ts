@@ -182,7 +182,11 @@ export async function generateAndDownloadDocx() {
   sections.push(sectionHeading("Work Experience"));
   for (const exp of workExperience) {
     sections.push(entryTitle(exp.title, exp.company));
+    if (exp.period) sections.push(descriptionParagraph(exp.period));
     sections.push(descriptionParagraph(exp.description));
+    for (const detail of exp.details ?? []) {
+      sections.push(bulletItem(detail));
+    }
     for (const link of exp.links) {
       sections.push(linkParagraph(link.text, link.href));
     }
@@ -192,6 +196,7 @@ export async function generateAndDownloadDocx() {
   sections.push(sectionHeading("Education"));
   for (const edu of education) {
     sections.push(entryTitle(edu.title, edu.institution));
+    if (edu.period) sections.push(descriptionParagraph(edu.period));
     sections.push(descriptionParagraph(edu.description));
     for (const link of edu.links) {
       sections.push(linkParagraph(link.text, link.href));

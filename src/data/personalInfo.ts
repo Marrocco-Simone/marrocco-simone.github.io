@@ -2,7 +2,7 @@ import type { PersonalInfo } from "../types";
 
 export const personalInfo: PersonalInfo = {
   name: "Marrocco Simone",
-  title: "Full Stack MERN Developer & Software Architecture Engineer",
+  title: "PhD Researcher in Telecommunications · Founder & Forward Deployed Engineer · Full Stack Engineer",
   contacts: [
     {
       type: "email",
@@ -27,7 +27,7 @@ export const personalInfo: PersonalInfo = {
     {
       type: "website",
       value: "Personal website",
-      href: "https://marrocco-simone.github.io/",
+      href: "https://marroccosimone.com",
     },
   ],
 };
