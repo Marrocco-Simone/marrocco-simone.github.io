@@ -1,45 +1,35 @@
 import React from "react";
-import { BookCheck, Microscope } from "lucide-react";
 import type { Education } from "../types";
 
 interface EducationCardProps {
   education: Education;
 }
 
-const getIcon = (iconName?: string) => {
-  switch (iconName) {
-    case "microscope":
-      return <Microscope size={16} />;
-    case "bookCheck":
-    default:
-      return <BookCheck size={16} />;
-  }
-};
-
 const EducationCard: React.FC<EducationCardProps> = ({ education }) => {
   return (
-    <div className="bg-white p-6 rounded-lg shadow-sm">
-      <h3 className="text-xl font-semibold mb-2">{education.title}</h3>
-      <h4 className="italic mb-2">{education.institution}</h4>
-      {education.period && (
-        <p className="text-sm text-gray-500 mb-2">{education.period}</p>
-      )}
-      <p className="text-gray-600 mb-4">{education.description}</p>
-      <div className="space-y-2">
-        {education.links.map((link, index) => (
+    <li className="border-b border-line py-4">
+      <h3 className="font-display text-xl font-semibold leading-[1.3]">
+        {education.title}
+      </h3>
+      <div className="font-display text-sm text-muted">
+        {education.institution}
+        {education.period && ` · ${education.period}`}
+      </div>
+      <p className="mb-2 mt-2 text-base text-ink-soft">{education.description}</p>
+      <div className="flex flex-wrap gap-x-4 gap-y-1 text-[15px]">
+        {education.links.map((link) => (
           <a
-            key={index}
+            key={link.href}
             href={link.href}
-            className="text-blue-600 hover:text-blue-800 flex items-center gap-2"
+            className="link"
             target="_blank"
             rel="noopener noreferrer"
           >
-            {getIcon(link.icon)}
             {link.text}
           </a>
         ))}
       </div>
-    </div>
+    </li>
   );
 };
 

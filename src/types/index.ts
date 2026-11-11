@@ -8,6 +8,8 @@ export interface Contact {
 export interface PersonalInfo {
   name: string;
   title: string;
+  intro: string[];
+  affiliation: string[];
   contacts: Contact[];
 }
 
@@ -51,4 +53,16 @@ export interface SkillCategory {
 export interface DocumentLink {
   text: string;
   href: string;
+}
+
+export interface Publication {
+  venue: string;
+  text: string;
+  href: string;
+}
+
+// News Types
+export interface NewsItem {
+  date: string;
+  text: string;
 }

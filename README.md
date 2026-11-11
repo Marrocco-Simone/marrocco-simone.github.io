@@ -6,4 +6,4 @@
 - Infrastructure and CI/CD with docker, kubernetes, Google Cloud Build / Artifact / Run
 - Low level expertise with C, Rust and Cuda
 
-CV: [marrocco-simone.github.io](https://marrocco-simone.github.io)
+CV: [marroccosimone.com](https://marroccosimone.com)

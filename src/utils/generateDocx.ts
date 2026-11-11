@@ -14,7 +14,7 @@ import { saveAs } from "file-saver";
 import { personalInfo } from "../data/personalInfo";
 import { workExperience } from "../data/workExperience";
 import { education } from "../data/education";
-import { documents } from "../data/documents";
+import { publications, documents } from "../data/documents";
 import { technicalSkills } from "../data/technicalSkills";
 import { softSkills } from "../data/softSkills";
 import { certifications } from "../data/certifications";
@@ -205,7 +205,7 @@ export async function generateAndDownloadDocx() {
 
   // Documents & Publications
   sections.push(sectionHeading("Documents & Publications"));
-  for (const doc of documents) {
+  for (const doc of [...publications, ...documents]) {
     sections.push(linkParagraph(doc.text, doc.href));
   }
 

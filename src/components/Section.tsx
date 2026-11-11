@@ -1,18 +1,17 @@
 import React from "react";
 
 interface SectionProps {
-  icon: React.ReactNode;
+  id: string;
   title: string;
   children: React.ReactNode;
 }
 
-const Section: React.FC<SectionProps> = ({ icon, title, children }) => {
+const Section: React.FC<SectionProps> = ({ id, title, children }) => {
   return (
-    <section>
-      <div className="flex items-center gap-2 mb-6">
-        {icon}
-        <h2 className="text-2xl font-bold">{title}</h2>
-      </div>
+    <section id={id} className="scroll-mt-20">
+      <h2 className="mb-[18px] mt-14 flex items-center gap-3.5 font-display text-[26px] font-extrabold leading-[1.1] tracking-[-0.02em] after:h-0.5 after:flex-1 after:bg-line after:content-[''] md:text-[30px]">
+        {title}
+      </h2>
       {children}
     </section>
   );

@@ -5,10 +5,11 @@ import { generateAndDownloadDocx } from "../utils/generateDocx";
 export default function DownloadDocxButton() {
   return (
     <button
+      type="button"
       onClick={generateAndDownloadDocx}
-      className="bg-blue-600 text-white rounded-lg px-4 py-3 hover:bg-blue-700 transition-colors fixed bottom-0 right-0 m-5 flex items-center gap-2 shadow-lg"
+      className="flex shrink-0 items-center gap-1.5 whitespace-nowrap rounded-md bg-accent px-4 py-2.5 font-display text-sm font-semibold text-white transition-colors hover:bg-accent-hover"
     >
-      <Download size={20} />
+      <Download size={16} aria-hidden="true" />
       Download CV
     </button>
   );

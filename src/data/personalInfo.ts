@@ -1,8 +1,13 @@
 import type { PersonalInfo } from "../types";
 
 export const personalInfo: PersonalInfo = {
-  name: "Marrocco Simone",
+  name: "Simone Marrocco",
   title: "PhD Researcher in Telecommunications · Founder & Forward Deployed Engineer · Full Stack Engineer",
+  intro: [
+    "PhD student at the University of Trento, in the [MANTA](https://manta.disi.unitn.it/) group. I study physical layer security with Reconfigurable Intelligent Surfaces for V2X and cooperative autonomous vehicles.",
+    "Solo founder and developer of [Judo in Cloud](https://judoincloud.com): 40+ competitions and about 14,000 athletes, deployed on site with my own fleet of laptops, tablets and screens.",
+  ],
+  affiliation: ["DISI, University of Trento", "Via Sommarive 9, Povo (TN)"],
   contacts: [
     {
       type: "email",
@@ -23,11 +28,6 @@ export const personalInfo: PersonalInfo = {
       type: "linkedin",
       value: "LinkedIn Profile",
       href: "https://www.linkedin.com/in/simone-marrocco",
-    },
-    {
-      type: "website",
-      value: "Personal website",
-      href: "https://marroccosimone.com",
     },
   ],
 };

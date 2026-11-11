@@ -2,9 +2,32 @@
 import CVWebsite from "../components/CVWebsite";
 import DownloadPDFButton from "../components/DownloadPDFButton";
 import Layout from "../layouts/Layout.astro";
+import { personalInfo } from "../data/personalInfo";
+
+const navLinks = [
+  { href: "#education", label: "Education" },
+  { href: "#experience", label: "Experience" },
+  { href: "#publications", label: "Publications" },
+  { href: "#skills", label: "Skills" },
+  { href: "#awards", label: "Awards" },
+];
 ---
 
 <Layout>
-  <DownloadPDFButton client:only="react" />
+  <header class="sticky top-0 z-10 border-b border-line bg-white/95 backdrop-blur-md">
+    <div class="mx-auto flex max-w-[1120px] items-center gap-4 px-4 py-2.5 md:px-6 md:py-3 lg:gap-7">
+      <a href="#" class="mr-auto min-w-0 truncate font-display text-lg font-extrabold tracking-[-0.01em] text-ink">
+        {personalInfo.name}
+      </a>
+      <nav aria-label="Sections" class="hidden gap-[22px] md:flex">
+        {navLinks.map((link) => (
+          <a href={link.href} class="font-display text-sm font-medium text-muted hover:text-ink">
+            {link.label}
+          </a>
+        ))}
+      </nav>
+      <DownloadPDFButton client:load />
+    </div>
+  </header>
   <CVWebsite />
 </Layout>
